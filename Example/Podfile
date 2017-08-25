@@ -1,0 +1,21 @@
+platform :ios, '9.1'
+
+inhibit_all_warnings!
+
+use_frameworks!
+
+
+target 'SpecTools_Example' do
+  
+  pod 'SnapKit', '~> 3.2.0'
+
+  target 'SpecTools_Tests' do
+    inherit! :search_paths
+
+    pod 'SpecTools', :path => '../'
+    pod 'Quick', '~> 1.0.0'
+    pod 'Nimble', '~> 5.1.1'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
+  end
+end
