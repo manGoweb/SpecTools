@@ -53,6 +53,16 @@
                ReferencedContainer = "container:SpecTools.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1504FD3F1F50C5E10000D7FA"
+               BuildableName = "SpecToolsExampleTests.xctest"
+               BlueprintName = "SpecToolsExampleTests"
+               ReferencedContainer = "container:SpecTools.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -1,6 +1,0 @@
-framework module Pods_SpecTools_Tests {
-  umbrella header "Pods-SpecTools_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
