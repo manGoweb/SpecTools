@@ -1,5 +1,5 @@
 //
-//  Spec+Traverser.swift
+//  Find+UIView.swift
 //  Pods
 //
 //  Created by Ondrej Rafaj on 25/08/2017.
@@ -8,17 +8,6 @@
 
 import Foundation
 import UIKit
-
-
-// MARK: - Settings
-
-public enum SpecVisualize: Int {
-    case none
-    case classes
-    case frames
-    case text
-    case all
-}
 
 
 // MARK: - Elements spec protocols
@@ -101,7 +90,7 @@ extension SpecFind where T: UIView {
     
     public func first(elementWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UIView? {
         if visualize != .none {
-            print("- \(description(element, nil, visualize))")
+            print("- \(Visualize.description(element, nil, visualize))")
         }
         
         let result: UIView? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize, level: 0)
@@ -111,7 +100,7 @@ extension SpecFind where T: UIView {
     
     public func first<E>(elementOfType type: E.Type, withText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> E? {
         if visualize != .none {
-            print("- \(description(element, nil, visualize))")
+            print("- \(Visualize.description(element, nil, visualize))")
         }
         
         guard let results = all(elementsOfType: E.self, visualize: visualize, level: 0) else {
@@ -148,7 +137,7 @@ extension SpecFind where T: UIView {
     
     public func all<T>(elementsOfType type: T.Type, visualize: SpecVisualize) -> [T]? {
         if visualize != .none {
-            print("- \(description(element, nil, visualize))")
+            print("- \(Visualize.description(element, nil, visualize))")
         }
         
         var elements: [T]? = nil
@@ -307,31 +296,12 @@ extension SpecFind where T: UIView {
         }
     }
     
-    private func description(_ item: UIView, _ text: String?, _ visualize: SpecVisualize) -> String {
-        let className = String(describing: type(of: item))
-        switch visualize {
-        case .all:
-            let textToPrint: String = (text != nil) ? ": " + text! : ""
-            return "\(className): \(NSStringFromCGRect(item.frame)); \(textToPrint)"
-        case .classes:
-            return "\(className)"
-        case .text:
-            let textToPrint: String = (text != nil) ? ": " + text! : ""
-            return "\(className)\(textToPrint)"
-        case .frames:
-            return "\(className): \(NSStringFromCGRect(item.frame))"
-        default:
-            return ""
-        }
-        
-    }
-    
     private func first(elementWithText text: String, exactMatch: Bool, visualize: SpecVisualize, level: Int) -> UIView? {
         for subview: UIView in element.subviews {
             let textFound: String? = subview.spec.find.anyText(preferablyMatching: text)
             
             if visualize != .none {
-                let item: String = "\(spaces(forLevel: level))\(description(subview, textFound, visualize))"
+                let item: String = "\(spaces(forLevel: level))\(Visualize.description(subview, textFound, visualize))"
                 print(item)
             }
             
@@ -358,7 +328,7 @@ extension SpecFind where T: UIView {
         for subview: UIView in element.subviews {
             if visualize != .none {
                 let subviewText: String? = subview.spec.find.anyText(preferablyMatching: "")
-                let item: String = "\(spaces(forLevel: level))\(description(subview, subviewText, visualize))"
+                let item: String = "\(spaces(forLevel: level))\(Visualize.description(subview, subviewText, visualize))"
                 print(item)
             }
             

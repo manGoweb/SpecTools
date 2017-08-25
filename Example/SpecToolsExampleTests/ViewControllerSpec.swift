@@ -25,19 +25,19 @@ class ViewControllerSpec: QuickSpec {
                 _ = subject.view
             }
             
-            it("has a visible label1") {
+            fit("has a visible label1") {
                 let element = subject.view.spec.find.first(labelWithText: "My first label")
-                expect(element?.spec.check.trulyVisible()).to(beTrue())
+                expect(element?.spec.check.isVisible(visualize: .text)).to(beTrue())
             }
             
             it("has a visible scrollView") {
                 let element = subject.view.spec.find.firstScrollView()
-                expect(element?.spec.check.trulyVisible()).to(beTrue())
+                expect(element?.spec.check.isVisible()).to(beTrue())
             }
             
             it("has a visible label2", closure: { 
                 let element = subject.view.spec.find.first(labelWithText: "My second label sitting in a scrollview")
-                expect(element?.spec.check.trulyVisible()).to(beTrue())
+                expect(element?.spec.check.isVisible(visualize: .text)).to(beTrue())
             })
             
         }

@@ -30,16 +30,29 @@ public struct SpecFind<T> {
     
 }
 
+public struct SpecPrepare<T> {
+    
+    let element: T
+    
+    init(_ obj: T) {
+        element = obj
+    }
+    
+}
+
 public struct SpecProperty<T> {
     
     let element: T
+    
     public let check: SpecCheck<T>
     public let find: SpecFind<T>
+    public let prepare: SpecPrepare<T>
     
     init(_ obj: T) {
         element = obj
         check = SpecCheck(obj)
         find = SpecFind(obj)
+        prepare = SpecPrepare(obj)
     }
     
 }
@@ -62,4 +75,5 @@ extension PropertyProtocol {
 }
 
 extension UIView: PropertyProtocol { }
+extension UIViewController: PropertyProtocol { }
 

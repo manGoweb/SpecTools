@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1504FD431F50C5E10000D7FA /* SpecToolsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD421F50C5E10000D7FA /* SpecToolsExampleTests.swift */; };
 		1504FD4E1F50C6520000D7FA /* BasicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD4C1F50C6520000D7FA /* BasicSpec.swift */; };
 		1504FD4F1F50C6520000D7FA /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		1504FD401F50C5E10000D7FA /* SpecToolsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpecToolsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1504FD421F50C5E10000D7FA /* SpecToolsExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecToolsExampleTests.swift; sourceTree = "<group>"; };
 		1504FD441F50C5E10000D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1504FD4C1F50C6520000D7FA /* BasicSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSpec.swift; sourceTree = "<group>"; };
 		1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 			children = (
 				1504FD4C1F50C6520000D7FA /* BasicSpec.swift */,
 				1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */,
-				1504FD421F50C5E10000D7FA /* SpecToolsExampleTests.swift */,
 				1504FD441F50C5E10000D7FA /* Info.plist */,
 			);
 			path = SpecToolsExampleTests;
@@ -399,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1504FD4F1F50C6520000D7FA /* ViewControllerSpec.swift in Sources */,
-				1504FD431F50C5E10000D7FA /* SpecToolsExampleTests.swift in Sources */,
 				1504FD4E1F50C6520000D7FA /* BasicSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +598,7 @@
 				1504FD491F50C5E10000D7FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SpecTools" */ = {
 			isa = XCConfigurationList;
