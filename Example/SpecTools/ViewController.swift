@@ -38,6 +38,14 @@ class ViewController: UIViewController {
             make.top.equalTo(label1.snp.bottom)
             make.left.right.bottom.equalToSuperview()
         }
+        
+        // Label 2
+        label1.text = "My second label sitting in a scrollview"
+        label1.textAlignment = .center
+        scrollView.addSubview(label1)
+        label1.snp.makeConstraints { (make) in
+            make.left.right.top.equalToSuperview()
+        }
     }
     
 }
