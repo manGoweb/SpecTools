@@ -1,7 +1,7 @@
 {
   "name": "SpecTools",
   "version": "0.1.0",
-  "summary": "A short description of SpecTools.",
+  "summary": "Set of tools to help you with testing interface",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/manGoweb/SpecTools",
   "license": {
@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "manGoweb": "dev@mangoweb.cz"
+    "Ondrej Rafaj": "dev@mangoweb.cz"
   },
   "source": {
     "git": "https://github.com/manGoweb/SpecTools.git",

@@ -40,6 +40,16 @@ public struct SpecPrepare<T> {
     
 }
 
+public struct SpecAction<T> {
+    
+    let element: T
+    
+    init(_ obj: T) {
+        element = obj
+    }
+    
+}
+
 public struct SpecProperty<T> {
     
     let element: T
@@ -47,12 +57,15 @@ public struct SpecProperty<T> {
     public let check: SpecCheck<T>
     public let find: SpecFind<T>
     public let prepare: SpecPrepare<T>
+    public let action: SpecAction<T>
     
     init(_ obj: T) {
         element = obj
+        
         check = SpecCheck(obj)
         find = SpecFind(obj)
         prepare = SpecPrepare(obj)
+        action = SpecAction(obj)
     }
     
 }

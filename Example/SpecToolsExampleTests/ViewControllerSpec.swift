@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import Quick
 import Nimble
 import SpecTools
@@ -22,7 +23,9 @@ class ViewControllerSpec: QuickSpec {
         
         describe("basic view controller") {
             beforeEach {
-                _ = subject.view
+                subject.spec.prepare.simulatePresentViewController()
+                subject.spec.prepare.set(viewSize: .iPhone6)
+                
             }
             
             fit("has a visible label1") {

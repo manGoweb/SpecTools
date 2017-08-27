@@ -40,7 +40,6 @@ extension SpecCheck where T: UIView {
             }
         }
         
-        
         // Check if we already reached the top view
         if parentView != nil {
             if parentView == element {
