@@ -21,22 +21,18 @@ extension SpecFind where T: UIViewController {
     }
     
     public func has(childViewController viewController: UIViewController) -> Bool {
-        // TODO: Check if views are added
-        // TODO: Check if childViewControllers contain viewController
-        return false
+        return element.childViewControllers.contains(viewController)
     }
     
     public func contains<T>(siblingClassInNavigationStack viewControllerClass: T.Type) -> Bool where T: UIViewController {
         guard let nc = element.navigationController else {
             return false
         }
-        // TODO: Check if navigationController.viewControllers contain any class of type T
-        return false
+        return nc.viewControllers.contains(where: { type(of: $0) == viewControllerClass })
     }
     
     public func contains<T>(childViewControllerClass viewControllerClass: T.Type) -> Bool where T: UIViewController {
-        // TODO: Check if childViewControllers contain any class of type T
-        return false
+        return element.childViewControllers.contains(where: { type(of: $0) == viewControllerClass })
     }
     
 }
@@ -46,13 +42,11 @@ extension SpecFind where T: UIViewController {
 extension SpecFind where T: UINavigationController {
     
     public func has(viewController: UIViewController) -> Bool {
-        // TODO: Check if self.viewControllers contain viewController
-        return false
+        return element.viewControllers.contains(viewController)
     }
     
     public func contains<T>(viewControllerClass: T.Type) -> Bool where T: UIViewController {
-        // TODO: Check if self.viewControllers contain any class of type T
-        return false
+        return element.viewControllers.contains(where: { type(of: $0) == viewControllerClass })
     }
     
 }
