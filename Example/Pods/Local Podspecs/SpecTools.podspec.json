@@ -1,8 +1,8 @@
 {
   "name": "SpecTools",
   "version": "0.1.0",
-  "summary": "Set of tools to help you with testing interface",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Library that helps you write less code when testing interface in your iOS apps.",
+  "description": "Library that helps you write less code when testing interface in your iOS apps.\nIt contains a set of tools split in a few categories that have very specific helpers functionality only for relevant elements.",
   "homepage": "https://github.com/manGoweb/SpecTools",
   "license": {
     "type": "MIT",
@@ -15,6 +15,7 @@
     "git": "https://github.com/manGoweb/SpecTools.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/rafiki270",
   "platforms": {
     "ios": "9.1"
   },

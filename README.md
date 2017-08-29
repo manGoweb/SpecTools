@@ -2,6 +2,7 @@
 
 # SpecTools
 
+[![CircleCI](https://img.shields.io/circleci/project/github/manGoweb/SpecTools.svg?style=plastic)](https://circleci.com/gh/manGoweb/SpecTools)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
 [![License](https://img.shields.io/cocoapods/l/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
