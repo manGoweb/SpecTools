@@ -95,6 +95,11 @@ extension SpecFind where T: UIView {
         
         let result: UIView? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize, level: 0)
         handle(result: result, forElementNamed: "Element", text: text, visualize: visualize)
+        
+        if visualize != .none && result != nil  {
+            print("Element with text \"\(text)\" has been found\n\n")
+        }
+        
         return result
     }
     
@@ -112,6 +117,8 @@ extension SpecFind where T: UIView {
             return nil
         }
         
+        print("\(String(describing: type)) has been found\n\n")
+        
         return element
     }
     
@@ -127,11 +134,14 @@ extension SpecFind where T: UIView {
         return first(elementOfType: UITableViewHeaderFooterView.self, visualize: visualize)
     }
     
-    public func first<E>(elementOfType: E.Type, visualize: SpecVisualize = .none) -> E? {
+    public func first<E>(elementOfType type: E.Type, visualize: SpecVisualize = .none) -> E? {
         guard let results = element.spec.find.all(elementsOfType: E.self, visualize: visualize, level: 0) else {
             handle(elementOfType: E.self, visualize: visualize)
             return nil
         }
+        
+        print("\(String(describing: type)) has been found\n\n")
+        
         return results.first
     }
     
@@ -277,26 +287,30 @@ extension SpecFind where T: UIView {
     private func handle<T>(elementOfType: T.Type, text: String, visualize: SpecVisualize) {
         if visualize != .none {
             let className = String(describing: type(of: T.self))
-            print("\(className) with text \(text) has not been found\n")
+            print("\(className) with text \"\(text)\" has not been found\n\n")
         }
     }
     
     private func handle<T>(elementOfType: T.Type, visualize: SpecVisualize) {
         if visualize != .none {
             let className = String(describing: type(of: T.self))
-            print("\(className) has not been found\n")
+            print("\(className) has not been found\n\n")
         }
     }
     
     private func handle(result: UIView?, forElementNamed name: String, text: String, visualize: SpecVisualize) {
         if visualize != .none {
             if result == nil {
-                print("\(name) with text \(text) has not been found\n")
+                print("\(name) with text \"\(text)\" has not been found\n\n")
             }
         }
     }
     
     private func first(elementWithText text: String, exactMatch: Bool, visualize: SpecVisualize, level: Int) -> UIView? {
+        if visualize != .none && level == 0 {
+            print("\nTraverse search for element with text \"\(text)\" has started")
+        }
+        
         for subview: UIView in element.subviews {
             let textFound: String? = subview.spec.find.anyText(preferablyMatching: text)
             
@@ -324,6 +338,10 @@ extension SpecFind where T: UIView {
     }
     
     private func all<T>(elementsOfType type: T.Type, visualize: SpecVisualize, level: Int) -> [T]? {
+        if visualize != .none && level == 0 {
+            print("\nTraverse search for element of type \"\(String(describing:type))\" has started")
+        }
+        
         var elements: [T]? = nil
         for subview: UIView in element.subviews {
             if visualize != .none {

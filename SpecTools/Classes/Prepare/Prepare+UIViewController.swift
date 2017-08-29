@@ -48,6 +48,7 @@ extension SpecPrepare where T: UIViewController {
     public func set(viewSize: CGSize) {
         element.view.frame.size = viewSize
         element.view.setNeedsLayout()
+        element.view.layoutIfNeeded()
     }
     
     public func set(viewSize: SpecDeviceScreenSize, height: CGFloat? = nil) {

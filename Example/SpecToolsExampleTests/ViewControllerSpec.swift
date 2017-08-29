@@ -24,11 +24,10 @@ class ViewControllerSpec: QuickSpec {
         describe("basic view controller") {
             beforeEach {
                 subject.spec.prepare.simulatePresentViewController()
-                subject.spec.prepare.set(viewSize: .iPhone6)
-                
+                subject.spec.prepare.set(viewSize: .iPhone4)
             }
             
-            fit("has a visible label1") {
+            it("has a visible label1") {
                 let element = subject.view.spec.find.first(labelWithText: "My first label")
                 expect(element?.spec.check.isVisible(visualize: .text)).to(beTrue())
             }
@@ -39,7 +38,7 @@ class ViewControllerSpec: QuickSpec {
             }
             
             it("has a visible label2", closure: { 
-                let element = subject.view.spec.find.first(labelWithText: "My second label sitting in a scrollview")
+                let element = subject.view.spec.find.first(labelWithText: "My second label sitting in a scrollview", visualize: .text)
                 expect(element?.spec.check.isVisible(visualize: .text)).to(beTrue())
             })
             
