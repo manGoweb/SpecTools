@@ -1,9 +1,12 @@
+![Alamofire: Elegant Networking in Swift](https://raw.githubusercontent.com/manGoweb/SpecTools/master/Assets/Icon.png)
+
 # SpecTools
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
 [![License](https://img.shields.io/cocoapods/l/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
 [![Platform](https://img.shields.io/cocoapods/p/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
+[![Twitter](https://img.shields.io/badge/twitter-@rafiki270-blue.svg?style=flat)](http://twitter.com/rafiki270)
 
 Library that helps you write less code when testing interface in your iOS apps.
 
@@ -13,13 +16,13 @@ After you add SpecTools framework a set of options will become available for mos
 
 These are:
 * action
-    * simulate tap on a button or view with a gesture recognizer
+    * simulate tap on a button or view with a gesture recogniser
 * check
-    * check if a view is trully visible on screen
+    * check if a view is truly visible on screen
 * find
     * locate any element on the screen based on their content or type
 * prepare
-    * prepare your view controller like it would get setup in a real enviroment
+    * prepare your view controller like it would get setup in a real environment
     * change size of the view for any device screen during runtime to check all is still visible
 
 There is a space for a lot more additional functionality so please feel free to raise issues with feature requests.
