@@ -9,24 +9,18 @@
 Pod::Spec.new do |s|
   s.name             = 'SpecTools'
   s.version          = '0.1.0'
-  s.summary          = 'Set of tools to help you with testing interface'
+  s.summary          = 'Library that helps you write less code when testing interface in your iOS apps.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Library that helps you write less code when testing interface in your iOS apps.
+It contains a set of tools split in a few categories that have very specific helpers functionality only for relevant elements.'
 
   s.homepage         = 'https://github.com/manGoweb/SpecTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ondrej Rafaj' => 'dev@mangoweb.cz' }
   s.source           = { :git => 'https://github.com/manGoweb/SpecTools.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/rafiki270'
+  s.social_media_url = 'https://twitter.com/rafiki270'
 
   s.ios.deployment_target = '9.1'
 
