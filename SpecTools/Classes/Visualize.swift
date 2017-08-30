@@ -11,14 +11,19 @@ import Foundation
 
 // MARK: - Settings
 
+/// Visualization types
 public enum SpecVisualize: Int {
+    /// No visualization
     case none
+    /// Show classes only
     case classes
+    /// Show classes and frames
     case frames
+    /// Show classes and text if available
     case text
+    /// Show classes, frames and text if available
     case all
 }
-
 
 class Visualize {
     

@@ -1,0 +1,166 @@
+{
+  "warnings": [
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Action/Action+Button.swift",
+      "line": 22,
+      "symbol": "SpecAction.tap(event:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Checks/Checks+UIView.swift",
+      "line": 17,
+      "symbol": "SpecCheck.isVisible(on:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 67,
+      "symbol": "SpecFind.first(textViewWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 73,
+      "symbol": "SpecFind.first(tableViewCellWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 77,
+      "symbol": "SpecFind.first(buttonWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 81,
+      "symbol": "SpecFind.first(tableSectionHeaderFooterViewWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 85,
+      "symbol": "SpecFind.first(tableHeaderFooterViewWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 106,
+      "symbol": "SpecFind.first(elementWithText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 121,
+      "symbol": "SpecFind.first(elementOfType:withText:exactMatch:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 140,
+      "symbol": "SpecFind.firstTableView(visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 144,
+      "symbol": "SpecFind.firstScrollView(visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 148,
+      "symbol": "SpecFind.firstTableHeaderFooterView(visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 152,
+      "symbol": "SpecFind.first(elementOfType:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 163,
+      "symbol": "SpecFind.all(elementsOfType:visualize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/Find/Find+UIView.swift",
+      "line": 190,
+      "symbol": "SpecFind.anyText(preferablyMatching:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": null,
+      "symbol": "PropertyProtocol",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 62,
+      "symbol": "SpecProperty.check",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 63,
+      "symbol": "SpecProperty.find",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 64,
+      "symbol": "SpecProperty.prepare",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 65,
+      "symbol": "SpecProperty.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 78,
+      "symbol": "PropertyProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 81,
+      "symbol": "PropertyProtocol.spec",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
+      "line": 87,
+      "symbol": "PropertyProtocol.spec",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Projects/iOS/SpecTools"
+}

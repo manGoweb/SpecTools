@@ -29,20 +29,35 @@ extension UITextView: SpecTextNonOptional, SpecAttributedTextNonOptional { }
 
 extension SpecFind where T: UIView {
     
-    // MARK: Public traversers
+    // MARK: Search methods for UIView elements
     
+    /// Search for a label with specific text
+    /// - Parameter labelWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UILabel? (nil if not found)
     public func first(labelWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UILabel? {
         let result: UILabel? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize) as? UILabel
         handle(result: result, forElementNamed: "Label", text: text, visualize: visualize)
         return result
     }
     
+    /// Search for a text field with specific text
+    /// - Parameter textFieldWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITextField? (nil if not found)
     public func first(textFieldWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UITextField? {
         let result: UITextField? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize) as? UITextField
         handle(result: result, forElementNamed: "Text field", text: text, visualize: visualize)
         return result
     }
     
+    /// Search for a search bar with specific text
+    /// - Parameter searchBarWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UISearchBar? (nil if not found)
     public func first(searchBarWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UISearchBar? {
         let result: UISearchBar? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize) as? UISearchBar
         handle(result: result, forElementNamed: "Search bar", text: text, visualize: visualize)

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 
+/// Checking properties of an object or a view
 public struct SpecCheck<T> {
     
     let element: T
@@ -20,6 +21,7 @@ public struct SpecCheck<T> {
     
 }
 
+/// Searching for views by their text or type
 public struct SpecFind<T> {
     
     let element: T
@@ -30,6 +32,7 @@ public struct SpecFind<T> {
     
 }
 
+/// Prepare objects or views for certain state
 public struct SpecPrepare<T> {
     
     let element: T
@@ -40,6 +43,7 @@ public struct SpecPrepare<T> {
     
 }
 
+/// Simulate actions on views or objects
 public struct SpecAction<T> {
     
     let element: T
@@ -50,6 +54,7 @@ public struct SpecAction<T> {
     
 }
 
+/// Main holding property. Any supported view or object will have .spec property available
 public struct SpecProperty<T> {
     
     let element: T

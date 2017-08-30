@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
-
+/*
+ #Check helper methods for UIView
+ */
 extension SpecCheck where T: UIView {
     
     public func isVisible(on parentView: UIView? = nil, visualize: SpecVisualize = .none) -> Bool {

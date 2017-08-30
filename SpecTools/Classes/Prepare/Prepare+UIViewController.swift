@@ -9,15 +9,22 @@
 import Foundation
 import UIKit
 
-
+/// Apple released devices, only contais first in a line (iPhone 6 is a predecesor of iPhone 7)
 public enum SpecDeviceScreenSize {
+    /// iPhone 4
     case iPhone4
+    /// iPhone 5
     case iPhone5
+    /// iPhone 6
     case iPhone6
+    /// iPhone 6+
     case iPhone6Plus
+    /// iPad
     case iPad
+    /// iPad Pro (large screen)
     case iPadProLarge
     
+    /// Return pixel size of the selected device
     public static func size(for type: SpecDeviceScreenSize) -> CGSize {
         switch type {
         case .iPhone4:
@@ -39,18 +46,23 @@ public enum SpecDeviceScreenSize {
 
 extension SpecPrepare where T: UIViewController {
     
+    // MARK: Preparation methods for UIViewController
+    
+    /// Will touch view of a view controller in order to get loadView and viewDidLoad called, than manually calls viewWillAppear and viewDidAppear with animations disabled
     public func simulatePresentViewController() {
         _ = element.view
         element.viewWillAppear(false)
         element.viewDidAppear(false)
     }
     
+    /// Set a new size for a view controllers view during runtime
     public func set(viewSize: CGSize) {
         element.view.frame.size = viewSize
         element.view.setNeedsLayout()
         element.view.layoutIfNeeded()
     }
     
+    /// Set a screensize of a desired device on a view of your view controller, you can specify a custom height. Custom height might be useful when scrollviews are present
     public func set(viewSize: SpecDeviceScreenSize, height: CGFloat? = nil) {
         var size = SpecDeviceScreenSize.size(for: viewSize)
         if height != nil && height! >= 0 {

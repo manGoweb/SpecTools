@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SpecFind Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/SpecFind" class="dashAnchor"></a>
+    <a title="SpecFind Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SpecTools Docs</a> (61% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SpecTools Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SpecFind Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SpecDeviceScreenSize.html">SpecDeviceScreenSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SpecVisualize.html">SpecVisualize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/PropertyProtocol.html">PropertyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/SpecAction.html">SpecAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpecCheck.html">SpecCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpecFind.html">SpecFind</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpecPrepare.html">SpecPrepare</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SpecProperty.html">SpecProperty</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SpecFind</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Searching for views by their text or type</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Search%20methods%20for%20UIView%20elements"></a>
+                <a name="//apple_ref/swift/Section/Search methods for UIView elements" class="dashAnchor"></a>
+                <a href="#/Search%20methods%20for%20UIView%20elements">
+                  <h3 class="section-name">Search methods for UIView elements</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT13labelWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo7UILabel_"></a>
+                    <a name="//apple_ref/swift/Method/first(labelWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT13labelWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo7UILabel_">first(labelWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search for a label with specific text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">first</span><span class="p">(</span><span class="n">labelWithText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">exactMatch</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">visualize</span><span class="p">:</span> <span class="kt"><a href="../Enums/SpecVisualize.html">SpecVisualize</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UILabel</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>labelWithText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Text you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>exactMatch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>False if you only looking for a part of the string (default: true)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>visualize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visualization types (display route to the element as a view structure)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UILabel? (nil if not found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT17textFieldWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Method/first(textFieldWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT17textFieldWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo11UITextField_">first(textFieldWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search for a text field with specific text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">first</span><span class="p">(</span><span class="n">textFieldWithText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">exactMatch</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">visualize</span><span class="p">:</span> <span class="kt"><a href="../Enums/SpecVisualize.html">SpecVisualize</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITextField</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>textFieldWithText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Text you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>exactMatch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>False if you only looking for a part of the string (default: true)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>visualize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visualization types (display route to the element as a view structure)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UITextField? (nil if not found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT17searchBarWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo11UISearchBar_"></a>
+                    <a name="//apple_ref/swift/Method/first(searchBarWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT17searchBarWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo11UISearchBar_">first(searchBarWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Search for a search bar with specific text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">first</span><span class="p">(</span><span class="n">searchBarWithText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">exactMatch</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">visualize</span><span class="p">:</span> <span class="kt"><a href="../Enums/SpecVisualize.html">SpecVisualize</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UISearchBar</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>searchBarWithText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Text you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>exactMatch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>False if you only looking for a part of the string (default: true)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>visualize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Visualization types (display route to the element as a view structure)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>UISearchBar? (nil if not found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT16textViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo10UITextView_"></a>
+                    <a name="//apple_ref/swift/Method/first(textViewWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT16textViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo10UITextView_">first(textViewWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT21tableViewCellWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo15UITableViewCell_"></a>
+                    <a name="//apple_ref/swift/Method/first(tableViewCellWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT21tableViewCellWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo15UITableViewCell_">first(tableViewCellWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT14buttonWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Method/first(buttonWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT14buttonWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo8UIButton_">first(buttonWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT36tableSectionHeaderFooterViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo27UITableViewHeaderFooterView_"></a>
+                    <a name="//apple_ref/swift/Method/first(tableSectionHeaderFooterViewWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT36tableSectionHeaderFooterViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqCSo27UITableViewHeaderFooterView_">first(tableSectionHeaderFooterViewWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT29tableHeaderFooterViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/first(tableHeaderFooterViewWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT29tableHeaderFooterViewWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqS0__">first(tableHeaderFooterViewWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT15elementWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqS0__"></a>
+                    <a name="//apple_ref/swift/Method/first(elementWithText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firstFT15elementWithTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqS0__">first(elementWithText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firsturFT13elementOfTypeMqd__8withTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqqd___"></a>
+                    <a name="//apple_ref/swift/Method/first(elementOfType:withText:exactMatch:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firsturFT13elementOfTypeMqd__8withTextSS10exactMatchSb9visualizeOS_13SpecVisualize_GSqqd___">first(elementOfType:withText:exactMatch:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind14firstTableViewFT9visualizeOS_13SpecVisualize_GSqCSo11UITableView_"></a>
+                    <a name="//apple_ref/swift/Method/firstTableView(visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind14firstTableViewFT9visualizeOS_13SpecVisualize_GSqCSo11UITableView_">firstTableView(visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind15firstScrollViewFT9visualizeOS_13SpecVisualize_GSqCSo12UIScrollView_"></a>
+                    <a name="//apple_ref/swift/Method/firstScrollView(visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind15firstScrollViewFT9visualizeOS_13SpecVisualize_GSqCSo12UIScrollView_">firstScrollView(visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind26firstTableHeaderFooterViewFT9visualizeOS_13SpecVisualize_GSqCSo27UITableViewHeaderFooterView_"></a>
+                    <a name="//apple_ref/swift/Method/firstTableHeaderFooterView(visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind26firstTableHeaderFooterViewFT9visualizeOS_13SpecVisualize_GSqCSo27UITableViewHeaderFooterView_">firstTableHeaderFooterView(visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firsturFT13elementOfTypeMqd__9visualizeOS_13SpecVisualize_GSqqd___"></a>
+                    <a name="//apple_ref/swift/Method/first(elementOfType:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind5firsturFT13elementOfTypeMqd__9visualizeOS_13SpecVisualize_GSqqd___">first(elementOfType:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind3allurFT14elementsOfTypeMqd__9visualizeOS_13SpecVisualize_GSqGSaqd____"></a>
+                    <a name="//apple_ref/swift/Method/all(elementsOfType:visualize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind3allurFT14elementsOfTypeMqd__9visualizeOS_13SpecVisualize_GSqGSaqd____">all(elementsOfType:visualize:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Text%20retrieval"></a>
+                <a name="//apple_ref/swift/Section/Text retrieval" class="dashAnchor"></a>
+                <a href="#/Text%20retrieval">
+                  <h3 class="section-name">Text retrieval</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind7anyTextFT18preferablyMatchingGSqSS__GSqSS_"></a>
+                    <a name="//apple_ref/swift/Method/anyText(preferablyMatching:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo6UIViewrVS_8SpecFind7anyTextFT18preferablyMatchingGSqSS__GSqSS_">anyText(preferablyMatching:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecFind</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Search%20methods%20for%20UIViewController"></a>
+                <a name="//apple_ref/swift/Section/Search methods for UIViewController" class="dashAnchor"></a>
+                <a href="#/Search%20methods%20for%20UIViewController">
+                  <h3 class="section-name">Search methods for UIViewController</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind3hasFT24siblingInNavigationStackS0__Sb"></a>
+                    <a name="//apple_ref/swift/Method/has(siblingInNavigationStack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind3hasFT24siblingInNavigationStackS0__Sb">has(siblingInNavigationStack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Look for a specific view controller in your navigation stack</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">has</span><span class="p">(</span><span class="n">siblingInNavigationStack</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>siblingInNavigationStack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind3hasFT19childViewControllerS0__Sb"></a>
+                    <a name="//apple_ref/swift/Method/has(childViewController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind3hasFT19childViewControllerS0__Sb">has(childViewController:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if a view controller has a child view controller</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">has</span><span class="p">(</span><span class="n">childViewController</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>childViewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind8containsuRd__S0_rFT29siblingClassInNavigationStackMqd___Sb"></a>
+                    <a name="//apple_ref/swift/Method/contains(siblingClassInNavigationStack:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind8containsuRd__S0_rFT29siblingClassInNavigationStackMqd___Sb">contains(siblingClassInNavigationStack:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if a view controller has a specific class type in its navigation stack</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">contains</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">siblingClassInNavigationStack</span> <span class="nv">viewControllerClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>siblingClassInNavigationStack</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Class of a view controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind8containsuRd__S0_rFT24childViewControllerClassMqd___Sb"></a>
+                    <a name="//apple_ref/swift/Method/contains(childViewControllerClass:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo16UIViewControllerrVS_8SpecFind8containsuRd__S0_rFT24childViewControllerClassMqd___Sb">contains(childViewControllerClass:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if a view controller has specifit class type of a child view controller</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">contains</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">childViewControllerClass</span> <span class="nv">viewControllerClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>childViewControllerClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Class of a view controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Search%20methods%20for%20UINavigationController"></a>
+                <a name="//apple_ref/swift/Section/Search methods for UINavigationController" class="dashAnchor"></a>
+                <a href="#/Search%20methods%20for%20UINavigationController">
+                  <h3 class="section-name">Search methods for UINavigationController</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo22UINavigationControllerrVS_8SpecFind3hasFT14viewControllerCSo16UIViewController_Sb"></a>
+                    <a name="//apple_ref/swift/Method/has(viewController:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo22UINavigationControllerrVS_8SpecFind3hasFT14viewControllerCSo16UIViewController_Sb">has(viewController:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check is navigation view controller contains certain view controller</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">has</span><span class="p">(</span><span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>View controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Fe9SpecToolsRxCSo22UINavigationControllerrVS_8SpecFind8containsuRd__CSo16UIViewControllerrFT19viewControllerClassMqd___Sb"></a>
+                    <a name="//apple_ref/swift/Method/contains(viewControllerClass:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Fe9SpecToolsRxCSo22UINavigationControllerrVS_8SpecFind8containsuRd__CSo16UIViewControllerrFT19viewControllerClassMqd___Sb">contains(viewControllerClass:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check is navigation view controller contains certain type of a view controller</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">contains</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">viewControllerClass</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewControllerClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Class of a view controller you are looking for</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool (true if found)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/manGoweb/SpecTools" target="_blank" rel="external">Ondrej Rafaj</a>. All rights reserved. (Last updated: 2017-08-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

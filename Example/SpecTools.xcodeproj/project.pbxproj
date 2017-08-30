@@ -32,6 +32,7 @@
 		1504FD441F50C5E10000D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1504FD4C1F50C6520000D7FA /* BasicSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSpec.swift; sourceTree = "<group>"; };
 		1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		1581B2C91F57711D00DDDA6C /* generate_docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = generate_docs.sh; path = ../generate_docs.sh; sourceTree = "<group>"; };
 		25476FCE33DB8F6A74FDBAAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SpecToolsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecToolsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +84,14 @@
 			path = SpecToolsExampleTests;
 			sourceTree = "<group>";
 		};
+		1581B2C81F57710600DDDA6C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1581B2C91F57711D00DDDA6C /* generate_docs.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 		15A9D7461F5069C200CA2555 /* View controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +108,7 @@
 				1504FD411F50C5E10000D7FA /* SpecToolsExampleTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				868C09697EF08344930D8033 /* Pods */,
+				1581B2C81F57710600DDDA6C /* Scripts */,
 				F0B62B17C2A2DE1D941E4561 /* Frameworks */,
 			);
 			sourceTree = "<group>";
