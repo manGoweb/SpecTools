@@ -31,7 +31,7 @@ extension SpecFind where T: UIView {
     
     // MARK: Search methods for UIView elements
     
-    /// Search for a label with specific text
+    /// Search for a label with a specific text
     /// - Parameter labelWithText: Text you are looking for
     /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
@@ -42,7 +42,7 @@ extension SpecFind where T: UIView {
         return result
     }
     
-    /// Search for a text field with specific text
+    /// Search for a text field with a specific text
     /// - Parameter textFieldWithText: Text you are looking for
     /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
@@ -53,7 +53,7 @@ extension SpecFind where T: UIView {
         return result
     }
     
-    /// Search for a search bar with specific text
+    /// Search for a search bar with a specific text
     /// - Parameter searchBarWithText: Text you are looking for
     /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
@@ -64,24 +64,49 @@ extension SpecFind where T: UIView {
         return result
     }
     
+    /// Search for a text view with a specific text
+    /// - Parameter textViewWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITextView? (nil if not found)
     public func first(textViewWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UITextView? {
         let result: UITextView? = first(elementWithText: text, exactMatch: exactMatch, visualize: visualize) as? UITextView
         handle(result: result, forElementNamed: "Text view", text: text, visualize: visualize)
         return result
     }
     
+    /// Search for a table view cell with a specific text
+    /// - Parameter tableViewCellWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITableViewCell? (nil if not found)
     public func first(tableViewCellWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UITableViewCell? {
         return first(elementOfType: UITableViewCell.self, withText: text, exactMatch: exactMatch, visualize: visualize)
     }
     
+    /// Search for a button with a specific text
+    /// - Parameter buttonWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UIButton? (nil if not found)
     public func first(buttonWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UIButton? {
         return first(elementOfType: UIButton.self, withText: text, exactMatch: exactMatch, visualize: visualize)
     }
     
+    /// Search for a UITableViewHeaderFooterView with a specific text
+    /// - Parameter tableSectionHeaderFooterViewWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITableViewHeaderFooterView? (nil if not found)
     public func first(tableSectionHeaderFooterViewWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UITableViewHeaderFooterView? {
         return first(elementOfType: UITableViewHeaderFooterView.self, withText: text, exactMatch: exactMatch, visualize: visualize)
     }
     
+    /// Search for a UITableView's header or footer (not section header or footer) with a specific text
+    /// - Parameter tableHeaderFooterViewWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UIView? (nil if not found)
     public func first(tableHeaderFooterViewWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UIView? {
         guard let results = element.spec.find.all(elementsOfType: UITableView.self, visualize: visualize) else {
             handle(elementOfType: UITableView.self, text: text, visualize: visualize)
@@ -103,6 +128,11 @@ extension SpecFind where T: UIView {
         return nil
     }
     
+    /// Search for any UIView element with a specific text
+    /// - Parameter elementWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UIView? (nil if not found)
     public func first(elementWithText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> UIView? {
         if visualize != .none {
             print("- \(Visualize.description(element, nil, visualize))")
@@ -118,6 +148,12 @@ extension SpecFind where T: UIView {
         return result
     }
     
+    /// Search for a specific element with a specific text
+    /// - Parameter elementOfType: UIView element class type
+    /// - Parameter withText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: Element? (nil if not found, generic method)
     public func first<E>(elementOfType type: E.Type, withText text: String, exactMatch: Bool = true, visualize: SpecVisualize = .none) -> E? {
         if visualize != .none {
             print("- \(Visualize.description(element, nil, visualize))")
@@ -137,18 +173,31 @@ extension SpecFind where T: UIView {
         return element
     }
     
+    /// Search for a table view
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITableView? (nil if not found)
     public func firstTableView(visualize: SpecVisualize = .none) -> UITableView? {
         return first(elementOfType: UITableView.self, visualize: visualize)
     }
     
+    /// Search for a scroll view
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UIScrollView? (nil if not found)
     public func firstScrollView(visualize: SpecVisualize = .none) -> UIScrollView? {
         return first(elementOfType: UIScrollView.self, visualize: visualize)
     }
     
+    /// Search for a UITableViewHeaderFooterView
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: UITableViewHeaderFooterView? (nil if not found)
     public func firstTableHeaderFooterView(visualize: SpecVisualize = .none) -> UITableViewHeaderFooterView? {
         return first(elementOfType: UITableViewHeaderFooterView.self, visualize: visualize)
     }
     
+    /// Search for a specific UI element
+    /// - Parameter elementOfType: UIView element class type
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: Element? (nil if not found, generic method)
     public func first<E>(elementOfType type: E.Type, visualize: SpecVisualize = .none) -> E? {
         guard let results = element.spec.find.all(elementsOfType: E.self, visualize: visualize, level: 0) else {
             handle(elementOfType: E.self, visualize: visualize)
@@ -160,6 +209,11 @@ extension SpecFind where T: UIView {
         return results.first
     }
     
+    /// Search for a search bar with a specific text
+    /// - Parameter searchBarWithText: Text you are looking for
+    /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: [Element]? (nil if not found, generic method)
     public func all<T>(elementsOfType type: T.Type, visualize: SpecVisualize) -> [T]? {
         if visualize != .none {
             print("- \(Visualize.description(element, nil, visualize))")
@@ -187,6 +241,9 @@ extension SpecFind where T: UIView {
     
     // MARK: Text retrieval
     
+    /// Return a text matching if present in any form on an object
+    /// - Parameter preferablyMatching: Text you are looking for
+    /// - Returns: String? (nil if not found)
     public func anyText(preferablyMatching text: String? = nil) -> String? {
         var textFound: String? = nil
         

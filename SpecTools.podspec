@@ -8,12 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpecTools'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'Library that helps you write less code when testing interface in your iOS apps.'
 
 
-  s.description      = 'Library that helps you write less code when testing interface in your iOS apps.
-It contains a set of tools split in a few categories that have very specific helpers functionality only for relevant elements.'
+  s.description      = 'Write less test code, this library contains a set of tools that are split in a few categories which have very specific helper functionality. All these are only available to their relevant elements.'
 
   s.homepage         = 'https://github.com/manGoweb/SpecTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

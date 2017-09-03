@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
-/*
- #Check helper methods for UIView
- */
+
 extension SpecCheck where T: UIView {
     
+    // MARK: Checking visibility of a UI element on screen
+    
+    /// Return a text matching if present in any form on an object
+    /// - Parameter on: Specify a root view to check against (if left as nil, last parent view will be assumed as root in a UIViewController so we do recommend to pass a root view to check against to have more dicisive result)
+    /// - Parameter visualize: Visualization types (display route to the element as a view structure)
+    /// - Returns: Bool (true if found)
     public func isVisible(on parentView: UIView? = nil, visualize: SpecVisualize = .none) -> Bool {
         let result = isVisible(on: parentView, visualize: visualize, level: 0)
         if visualize != .none {
@@ -30,7 +34,7 @@ extension SpecCheck where T: UIView {
             }
             
             var space = ""
-            for i in 0...level {
+            for _ in 0...level {
                 space.append("  ")
             }
             let text = element.spec.find.anyText()
