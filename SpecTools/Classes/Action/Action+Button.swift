@@ -14,14 +14,10 @@ extension SpecAction where T: UIButton {
     
     // MARK: Action helper methods for UIButton
     
-    /*
-     Simulate tap on a button
-     
-     @event: (optional) UIControlEvents, default: .touchUpInside
-    */
+    /// Simulate tap on a button
+    /// - Parameter event: Event type to trigger
     public func tap(event: UIControlEvents = .touchUpInside) {
-        //guard let action = element.actio
-        //guard let target = element.target(forAction: <#T##Selector#>, withSender: <#T##Any?#>)
+        element.sendActions(for: event)
     }
     
 }
