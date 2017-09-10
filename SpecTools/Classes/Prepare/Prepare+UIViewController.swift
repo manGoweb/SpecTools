@@ -50,7 +50,7 @@ extension SpecPrepare where T: UIViewController {
     
     /// Will touch view of a view controller in order to get loadView and viewDidLoad called, than manually calls viewWillAppear and viewDidAppear with animations disabled
     public func simulatePresentViewController() {
-        _ = element.view
+        element.loadViewIfNeeded()
         element.viewWillAppear(false)
         element.viewDidAppear(false)
     }
@@ -71,6 +71,23 @@ extension SpecPrepare where T: UIViewController {
         set(viewSize: size)
     }
     
+    /// Give view controller a navigation controller
+    public func assign<T>(navigationControllerOfClass classType: T.Type? = nil) where T: UINavigationController {
+        var nc: UINavigationController
+        if classType == nil {
+            nc = UINavigationController(rootViewController: element)
+        }
+        else {
+            nc = classType!.init(rootViewController: element)
+        }
+        nc.spec.prepare.simulatePresentViewController()
+    }
+    
+    public func assignMockNavigationController() -> MockNavigationController {
+        var nc = MockNavigationController(rootViewController: element)
+        nc.spec.prepare.simulatePresentViewController()
+        return nc
+    }
+    
 }
-
 
