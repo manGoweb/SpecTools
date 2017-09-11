@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SpecProperty Struct Reference</title>
+    <title>MockNavigationController Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/SpecProperty" class="dashAnchor"></a>
-    <a title="SpecProperty Struct Reference"></a>
+    <a name="//apple_ref/swift/Class/MockNavigationController" class="dashAnchor"></a>
+    <a title="MockNavigationController Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SpecTools Docs</a> (98% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SpecTools Reference</a>
         <img id="carat" src="../img/carat.png" />
-        SpecProperty Struct Reference
+        MockNavigationController Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -79,14 +79,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SpecProperty</h1>
+            <h1>MockNavigationController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SpecProperty</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MockNavigationController</span><span class="p">:</span> <span class="kt">UINavigationController</span></code></pre>
 
                 </div>
               </div>
-            <p>Main holding property. Any supported view or object will have .spec property available</p>
+            <p>Mock navigation view controller</p>
 
           </section>
           <section class="section task-group-section">
@@ -95,9 +95,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A8PropertyV5checkAA5CheckVyxGv"></a>
-                    <a name="//apple_ref/swift/Property/check" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A8PropertyV5checkAA5CheckVyxGv">check</a>
+                    <a name="/c:@M@SpecTools@objc(cs)MockNavigationController(py)didPushViewController"></a>
+                    <a name="//apple_ref/swift/Property/didPushViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SpecTools@objc(cs)MockNavigationController(py)didPushViewController">didPushViewController</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -105,15 +105,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Contains checks on supported elements
-(like isVisible or hasSiblings, etc)</p>
+                        <p>Checks if a view controller has been pushed (can be used only once &hellip; obviously)</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">check</span><span class="p">:</span> <span class="kt"><a href="../Structs/Check.html">Check</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">didPushViewController</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span></code></pre>
 
                         </div>
                       </div>
@@ -123,9 +122,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A8PropertyV4findAA4FindVyxGv"></a>
-                    <a name="//apple_ref/swift/Property/find" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A8PropertyV4findAA4FindVyxGv">find</a>
+                    <a name="/c:@M@SpecTools@objc(cs)MockNavigationController(py)lastPushedViewController"></a>
+                    <a name="//apple_ref/swift/Property/lastPushedViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SpecTools@objc(cs)MockNavigationController(py)lastPushedViewController">lastPushedViewController</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -133,15 +132,52 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>If you are looking for something, find is your guy
-(You can find text, recurse through UIView structures, etc)</p>
+                        <p>Last pushed view controller</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">find</span><span class="p">:</span> <span class="kt"><a href="../Structs/Find.html">Find</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastPushedViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UINavigationController%20Overrides"></a>
+                <a name="//apple_ref/swift/Section/UINavigationController Overrides" class="dashAnchor"></a>
+                <a href="#/UINavigationController%20Overrides">
+                  <h3 class="section-name">UINavigationController Overrides</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SpecTools@objc(cs)MockNavigationController(im)pushViewController:animated:"></a>
+                    <a name="//apple_ref/swift/Method/pushViewController(_:animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SpecTools@objc(cs)MockNavigationController(im)pushViewController:animated:">pushViewController(_:animated:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helps testing if view controller has been pushed. It updates the stack right away</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">pushViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -151,9 +187,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A8PropertyV7prepareAA7PrepareVyxGv"></a>
-                    <a name="//apple_ref/swift/Property/prepare" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A8PropertyV7prepareAA7PrepareVyxGv">prepare</a>
+                    <a name="/c:@M@SpecTools@objc(cs)MockNavigationController(im)popViewControllerAnimated:"></a>
+                    <a name="//apple_ref/swift/Method/popViewController(animated:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SpecTools@objc(cs)MockNavigationController(im)popViewControllerAnimated:">popViewController(animated:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -161,43 +197,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Prepares supported elements
-(like prepare view controllers for testing, etc)</p>
+                        <p>Helps testing if view controller has been popped. It updates the stack right away</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prepare</span><span class="p">:</span> <span class="kt"><a href="../Structs/Prepare.html">Prepare</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9SpecTools0A8PropertyV6actionAA6ActionVyxGv"></a>
-                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A8PropertyV6actionAA6ActionVyxGv">action</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Actions on supported elements
-(like tap on a button or execute a gesture recognizers targets)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Structs/Action.html">Action</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">popViewController</span><span class="p">(</span><span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>

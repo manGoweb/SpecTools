@@ -59,9 +59,17 @@ public struct SpecProperty<T> {
     
     let element: T
     
+    /// Contains checks on supported elements
+    /// (like isVisible or hasSiblings, etc)
     public let check: Check<T>
+    /// If you are looking for something, find is your guy
+    /// (You can find text, recurse through UIView structures, etc)
     public let find: Find<T>
+    /// Prepares supported elements
+    /// (like prepare view controllers for testing, etc)
     public let prepare: Prepare<T>
+    /// Actions on supported elements
+    /// (like tap on a button or execute a gesture recognizers targets)
     public let action: Action<T>
     
     init(_ obj: T) {
@@ -75,6 +83,7 @@ public struct SpecProperty<T> {
     
 }
 
+/// Main property protocol which delivers basic element accessors
 public protocol PropertyProtocol {
     
     associatedtype PropertyParentType
@@ -84,6 +93,7 @@ public protocol PropertyProtocol {
 
 extension PropertyProtocol {
     
+    /// Main property used to access checks, finds, prepares and and actions for any supported elements
     public var spec: SpecProperty<Self> {
         get {
             return SpecProperty(self)

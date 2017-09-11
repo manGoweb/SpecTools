@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SpecDeviceScreenSize Enum Reference</title>
+    <title>Prepare Struct Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/SpecDeviceScreenSize" class="dashAnchor"></a>
-    <a title="SpecDeviceScreenSize Enum Reference"></a>
+    <a name="//apple_ref/swift/Struct/Prepare" class="dashAnchor"></a>
+    <a title="Prepare Struct Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SpecTools Docs</a> (98% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">SpecTools Reference</a>
         <img id="carat" src="../img/carat.png" />
-        SpecDeviceScreenSize Enum Reference
+        Prepare Struct Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -79,25 +79,32 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>SpecDeviceScreenSize</h1>
+            <h1>Prepare</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SpecDeviceScreenSize</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Prepare</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>Apple devices, this enum only contais first in a line/screensize for each device (iPhone 6 is a predecesor of iPhone 7 thus only 6 is shown)</p>
+            <p>Prepare objects or views for certain state</p>
 
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Preparation%20methods%20for%20UIViewController"></a>
+                <a name="//apple_ref/swift/Section/Preparation methods for UIViewController" class="dashAnchor"></a>
+                <a href="#/Preparation%20methods%20for%20UIViewController">
+                  <h3 class="section-name">Preparation methods for UIViewController</h3>
+                </a>
+              </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO7iPhone4A2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPhone4" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO7iPhone4A2CmF">iPhone4</a>
+                    <a name="/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE019simulatePresentViewE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/simulatePresentViewController()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE019simulatePresentViewE0yyF">simulatePresentViewController()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -105,30 +112,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>iPhone 4</p>
+                        <p>Will touch view of a view controller in order to get loadView and viewDidLoad called, than manually calls viewWillAppear and viewDidAppear with animations disabled</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPhone4</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">simulatePresentViewController</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO7iPhone5A2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPhone5" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO7iPhone5A2CmF">iPhone5</a>
+                    <a name="/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE3setySC6CGSizeV8viewSize_tF"></a>
+                    <a name="//apple_ref/swift/Method/set(viewSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE3setySC6CGSizeV8viewSize_tF">set(viewSize:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -136,30 +139,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>iPhone 5</p>
+                        <p>Set a new size for a view controllers view during runtime</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPhone5</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">viewSize</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO7iPhone6A2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPhone6" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO7iPhone6A2CmF">iPhone6</a>
+                    <a name="/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE3setyAA0A16DeviceScreenSizeO04viewI0_12CoreGraphics7CGFloatVSg6heighttF"></a>
+                    <a name="//apple_ref/swift/Method/set(viewSize:height:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE3setyAA0A16DeviceScreenSizeO04viewI0_12CoreGraphics7CGFloatVSg6heighttF">set(viewSize:height:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,30 +166,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>iPhone 6</p>
+                        <p>Set a screensize of a desired device on a view of your view controller, you can specify a custom height. Custom height might be useful when scrollviews are present</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPhone6</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">viewSize</span><span class="p">:</span> <span class="kt"><a href="../Enums/SpecDeviceScreenSize.html">SpecDeviceScreenSize</a></span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO11iPhone6PlusA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPhone6Plus" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO11iPhone6PlusA2CmF">iPhone6Plus</a>
+                    <a name="/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE6assignyqd__mSg010navigationE7OfClass_tSo012UINavigationE0CRbd__lF"></a>
+                    <a name="//apple_ref/swift/Method/assign(navigationControllerOfClass:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE6assignyqd__mSg010navigationE7OfClass_tSo012UINavigationE0CRbd__lF">assign(navigationControllerOfClass:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -198,30 +193,26 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>iPhone 6+</p>
+                        <p>Give view controller a navigation controller</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPhone6Plus</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">assign</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">navigationControllerOfClass</span> <span class="nv">classType</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="k">Type</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">where</span> <span class="kt">T</span><span class="p">:</span> <span class="kt">UINavigationController</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO4iPadA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPad" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO4iPadA2CmF">iPad</a>
+                    <a name="/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE020assignMockNavigationE0AA0ghE0CyF"></a>
+                    <a name="//apple_ref/swift/Method/assignMockNavigationController()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SpecTools7PrepareVAASo16UIViewControllerCRbzlE020assignMockNavigationE0AA0ghE0CyF">assignMockNavigationController()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -229,76 +220,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>iPad</p>
+                        <p>Give view controller a mock navigation controller which mainly allows for testing push/pop functionality</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPad</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO12iPadProLargeA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/iPadProLarge" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO12iPadProLargeA2CmF">iPadProLarge</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>iPad Pro (large screen)</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">case</span> <span class="n">iPadProLarge</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9SpecTools0A16DeviceScreenSizeO4sizeSC6CGSizeVAC3for_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/size(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SpecTools0A16DeviceScreenSizeO4sizeSC6CGSizeVAC3for_tFZ">size(for:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Return pixel size of the selected device</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">size</span><span class="p">(</span><span class="k">for</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">SpecDeviceScreenSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assignMockNavigationController</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/MockNavigationController.html">MockNavigationController</a></span></code></pre>
 
                         </div>
                       </div>

@@ -81,6 +81,18 @@ class ViewControllerSpec: QuickSpec {
                 expect(element?.spec.check.isVisible(on: subject.view, visualize: .frames)).to(beTrue())
             })
             
+            describe("when we tap on button1") {
+                beforeEach {
+                    // Simulate button tap
+                    button1.spec.action.tap()
+                }
+            
+                it("should have pushed new view controller") {
+                    // Check we have new view controller in the navigation stack
+                    expect(subject.navigationController?.spec.check.contains(viewControllerClass: TableViewController.self)).to(beTrue())
+                }
+            }
+            
         }
         
     }
@@ -93,6 +105,10 @@ class ViewControllerSpec: QuickSpec {
 To run the example project: 
 * Clone the repo, and run `pod install` from the Example directory.
 * Cmd+U to run example tests
+
+## Documentation
+
+Jazzy based documentation is available here [![Docs](https://cdn.rawgit.com/manGoweb/SpecTools/master/docs/badge.svg)](https://github.com/manGoweb/SpecTools/tree/master/docs). Proper web based one is coming.
 
 ## Requirements
 

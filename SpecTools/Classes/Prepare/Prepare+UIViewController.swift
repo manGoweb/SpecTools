@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-/// Apple released devices, only contais first in a line (iPhone 6 is a predecesor of iPhone 7)
+/// Apple devices, this enum only contais first in a line/screensize for each device (iPhone 6 is a predecesor of iPhone 7 thus only 6 is shown)
 public enum SpecDeviceScreenSize {
     /// iPhone 4
     case iPhone4
@@ -83,6 +83,7 @@ extension Prepare where T: UIViewController {
         nc.spec.prepare.simulatePresentViewController()
     }
     
+    /// Give view controller a mock navigation controller which mainly allows for testing push/pop functionality
     public func assignMockNavigationController() -> MockNavigationController {
         var nc = MockNavigationController(rootViewController: element)
         nc.spec.prepare.simulatePresentViewController()
