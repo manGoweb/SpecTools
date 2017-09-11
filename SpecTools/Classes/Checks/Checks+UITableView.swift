@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-extension SpecCheck where T: UITableView {
+extension Check where T: UITableView {
     
     // MARK: Table view data source checks
     

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-extension SpecFind where T: UITableView {
+extension Find where T: UITableView {
     
     // MARK: Table view data source shortcuts
     

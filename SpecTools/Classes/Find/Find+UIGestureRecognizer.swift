@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-extension SpecFind where T: UIView {
+extension Find where T: UIView {
     
     // MARK: Find gesture recognizers
     

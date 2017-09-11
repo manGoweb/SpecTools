@@ -44,7 +44,7 @@ public enum SpecDeviceScreenSize {
 }
 
 
-extension SpecPrepare where T: UIViewController {
+extension Prepare where T: UIViewController {
     
     // MARK: Preparation methods for UIViewController
     

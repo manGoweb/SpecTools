@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: View controller
 
-extension SpecCheck where T: UIViewController {
+extension Check where T: UIViewController {
     
     // MARK: Search methods for UIViewController
     
@@ -53,7 +53,7 @@ extension SpecCheck where T: UIViewController {
 
 // MARK: - Navigation view controller
 
-extension SpecCheck where T: UINavigationController {
+extension Check where T: UINavigationController {
     
     // MARK: Search methods for UINavigationController
     

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-extension SpecCheck where T: UIView {
+extension Check where T: UIView {
     
     // MARK: Checking visibility of a UI element on screen
     

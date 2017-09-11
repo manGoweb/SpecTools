@@ -74,7 +74,7 @@ class ViewController: UIViewController {
         }
         
         button1.setTitle("Launch table view controller", for: .normal)
-        button1.addTarget(self, action: #selector(didTapLabel1Action(_:)), for: .touchUpInside)
+        button1.addTarget(self, action: #selector(didTapButton1(_:)), for: .touchUpInside)
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button1.layer.borderWidth = 1
         button1.layer.cornerRadius = 5

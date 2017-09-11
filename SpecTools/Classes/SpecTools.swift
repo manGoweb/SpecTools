@@ -11,7 +11,7 @@ import UIKit
 
 
 /// Checking properties of an object or a view
-public struct SpecCheck<T> {
+public struct Check<T> {
     
     let element: T
     
@@ -22,7 +22,7 @@ public struct SpecCheck<T> {
 }
 
 /// Searching for views by their text or type
-public struct SpecFind<T> {
+public struct Find<T> {
     
     let element: T
     
@@ -33,7 +33,7 @@ public struct SpecFind<T> {
 }
 
 /// Prepare objects or views for certain state
-public struct SpecPrepare<T> {
+public struct Prepare<T> {
     
     let element: T
     
@@ -44,7 +44,7 @@ public struct SpecPrepare<T> {
 }
 
 /// Simulate actions on views or objects
-public struct SpecAction<T> {
+public struct Action<T> {
     
     let element: T
     
@@ -59,18 +59,18 @@ public struct SpecProperty<T> {
     
     let element: T
     
-    public let check: SpecCheck<T>
-    public let find: SpecFind<T>
-    public let prepare: SpecPrepare<T>
-    public let action: SpecAction<T>
+    public let check: Check<T>
+    public let find: Find<T>
+    public let prepare: Prepare<T>
+    public let action: Action<T>
     
     init(_ obj: T) {
         element = obj
         
-        check = SpecCheck(obj)
-        find = SpecFind(obj)
-        prepare = SpecPrepare(obj)
-        action = SpecAction(obj)
+        check = Check(obj)
+        find = Find(obj)
+        prepare = Prepare(obj)
+        action = Action(obj)
     }
     
 }

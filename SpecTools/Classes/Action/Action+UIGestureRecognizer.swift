@@ -12,7 +12,7 @@ import UIKit
 public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
 
 
-extension SpecAction where T: UIView {
+extension Action where T: UIView {
     
     // MARK: Action helper methods for UIGestureRecognizer
     
@@ -36,7 +36,7 @@ extension SpecAction where T: UIView {
     
 }
 
-extension SpecAction where T: UIGestureRecognizer {
+extension Action where T: UIGestureRecognizer {
     
     // MARK: Retrieving targets from gesture recognizers
     

@@ -27,7 +27,7 @@ extension UITextView: SpecTextNonOptional, SpecAttributedTextNonOptional { }
 
 // MARK: - Traverser
 
-extension SpecFind where T: UIView {
+extension Find where T: UIView {
     
     // MARK: Search methods for UIView elements
     
