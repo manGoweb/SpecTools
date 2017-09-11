@@ -18,14 +18,19 @@ After you add SpecTools framework a set of options will become available for mos
 
 These are:
 * action
-    * simulate tap on a button or view with a gesture recogniser
+    * simulate tap on a button with specific action event
+    * simulate gesture recognizer taps
 * check
-    * check if a view is truly visible on screen
+    * if a view is truly visible on screen
+    * view controllers and navigation stacks
+    * table views have the right content in their cells
 * find
-    * locate any element on the screen based on their content or type
+    * locate any element or elements on the screen based on their content or type
+    * any text on any UI element
 * prepare
     * prepare your view controller like it would get setup in a real environment
     * change size of the view for any device screen during runtime to check all is still visible
+    * assign your test view controllers to a mock navigation controller in order to track `pushViewController` or `popViewController` methods
 
 There is a space for a lot more additional functionality so please feel free to raise issues with feature requests.
 

@@ -159,12 +159,12 @@ extension SpecFind where T: UIView {
             print("- \(Visualize.description(element, nil, visualize))")
         }
         
-        guard let results = all(elementsOfType: E.self, visualize: visualize, level: 0) else {
-            handle(elementOfType: E.self, text: text, visualize: visualize)
+        guard let results = all(elementsOfType: type, visualize: visualize, level: 0) else {
+            handle(elementOfType: type, text: text, visualize: visualize)
             return nil
         }
         guard let element: E = recurse(results: results, withText: text, exactMatch: exactMatch) else {
-            handle(elementOfType: E.self, text: text, visualize: visualize)
+            handle(elementOfType: type, text: text, visualize: visualize)
             return nil
         }
         
@@ -199,8 +199,8 @@ extension SpecFind where T: UIView {
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
     /// - Returns: Element? (nil if not found, generic method)
     public func first<E>(elementOfType type: E.Type, visualize: SpecVisualize = .none) -> E? {
-        guard let results = element.spec.find.all(elementsOfType: E.self, visualize: visualize, level: 0) else {
-            handle(elementOfType: E.self, visualize: visualize)
+        guard let results = element.spec.find.all(elementsOfType: type, visualize: visualize, level: 0) else {
+            handle(elementOfType: type, visualize: visualize)
             return nil
         }
         
@@ -347,7 +347,7 @@ extension SpecFind where T: UIView {
         if results.count > 0 {
             for r: E in results {
                 let e: UIView = r as! UIView
-                if let _ = e.spec.find.first(elementWithText: text, visualize: visualize) {
+                if let _ = e.spec.find.first(elementWithText: text, exactMatch: exactMatch, visualize: visualize) {
                     return r
                 }
             }
@@ -356,16 +356,16 @@ extension SpecFind where T: UIView {
         return nil
     }
     
-    private func handle<T>(elementOfType: T.Type, text: String, visualize: SpecVisualize) {
+    private func handle<T>(elementOfType type: T.Type, text: String, visualize: SpecVisualize) {
         if visualize != .none {
-            let className = String(describing: type(of: T.self))
+            let className = String(describing: type(of: type))
             print("\(className) with text \"\(text)\" has not been found\n\n")
         }
     }
     
-    private func handle<T>(elementOfType: T.Type, visualize: SpecVisualize) {
+    private func handle<T>(elementOfType type: T.Type, visualize: SpecVisualize) {
         if visualize != .none {
-            let className = String(describing: type(of: T.self))
+            let className = String(describing: type(of: type))
             print("\(className) has not been found\n\n")
         }
     }

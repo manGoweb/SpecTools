@@ -47,11 +47,15 @@ class ViewController: UIViewController {
         // Label 1
         label1.text = "My first label"
         label1.textAlignment = .center
+        label1.isUserInteractionEnabled = true
         view.addSubview(label1)
         label1.snp.makeConstraints { (make) in
             make.top.equalTo(74)
             make.left.right.equalToSuperview()
         }
+        
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(didTapLabel1Action(_:)))
+        label1.addGestureRecognizer(tap1)
         
         // Screate scroll view
         view.addSubview(scrollView)
@@ -70,7 +74,7 @@ class ViewController: UIViewController {
         }
         
         button1.setTitle("Launch table view controller", for: .normal)
-        button1.addTarget(self, action: #selector(didTapButton1(_:)), for: .touchUpInside)
+        button1.addTarget(self, action: #selector(didTapLabel1Action(_:)), for: .touchUpInside)
         button1.layer.borderColor = UIColor.lightGray.cgColor
         button1.layer.borderWidth = 1
         button1.layer.cornerRadius = 5
@@ -97,6 +101,13 @@ class ViewController: UIViewController {
     }
     
     // MARK: Actions
+    
+    var didTapLabel1: Bool = false
+    
+    func didTapLabel1Action(_ sender: UITapGestureRecognizer) {
+        print("Did tap label1")
+        didTapLabel1 = true
+    }
     
     func didTapButton1(_ sender: UIButton) {
         let c = TableViewController()

@@ -55,6 +55,20 @@ class ViewControllerSpec: QuickSpec {
                 expect(element?.spec.check.isVisible(visualize: .text)).to(beTrue())
             }
             
+            describe("on label1") {
+                beforeEach {
+                    // Get your first label
+                    let element = subject.view.spec.find.first(labelWithText: "My first label")
+                    // Trigger a tap
+                    element?.spec.action.triggerTap()
+                }
+                
+                it("should be able to trigget tap gesture recognizer") {
+                    // Check if action has been triggered
+                    expect(subject.didTapLabel1).to(beTrue())
+                }
+            }
+            
             it("has a visible scrollView") {
                 // Get a scroll view
                 let element = subject.view.spec.find.firstScrollView()

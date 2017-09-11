@@ -18,7 +18,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     // MARK: Table view delegate & data source methods
@@ -32,9 +32,11 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         cell.textLabel?.text = "Cell title with row: \(indexPath.row)"
         cell.detailTextLabel?.text = "Cell description with row: \(indexPath.row)"
+        cell.customLabel.text = "Index: \(indexPath.row)"
+        cell.customImageView.image = UIImage(named: "Icon-Small-40")
         return cell
     }
     

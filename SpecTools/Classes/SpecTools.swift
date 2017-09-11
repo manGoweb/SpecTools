@@ -92,6 +92,7 @@ extension PropertyProtocol {
     
 }
 
+extension UIGestureRecognizer: PropertyProtocol { }
 extension UIView: PropertyProtocol { }
 extension UIViewController: PropertyProtocol { }
 

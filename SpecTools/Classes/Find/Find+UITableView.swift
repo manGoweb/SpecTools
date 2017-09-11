@@ -11,7 +11,7 @@ import UIKit
 
 extension SpecFind where T: UITableView {
     
-    // MARK: Table view data source find methods
+    // MARK: Table view data source shortcuts
     
     /// Return number of sections on a table view data source
     /// - Returns: Int
