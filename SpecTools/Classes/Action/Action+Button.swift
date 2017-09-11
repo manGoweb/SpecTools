@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-extension SpecAction where T: UIButton {
+extension Action where T: UIButton {
     
     // MARK: Action helper methods for UIButton
     

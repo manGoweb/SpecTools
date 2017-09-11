@@ -2,56 +2,7 @@
   "warnings": [
     {
       "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": null,
-      "symbol": "PropertyProtocol",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 62,
-      "symbol": "SpecProperty.check",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 63,
-      "symbol": "SpecProperty.find",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 64,
-      "symbol": "SpecProperty.prepare",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 65,
-      "symbol": "SpecProperty.action",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 78,
-      "symbol": "PropertyProtocol",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 81,
-      "symbol": "PropertyProtocol.spec",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Projects/iOS/SpecTools/SpecTools/Classes/SpecTools.swift",
-      "line": 87,
+      "line": 90,
       "symbol": "PropertyProtocol.spec",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

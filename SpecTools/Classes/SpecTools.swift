@@ -11,7 +11,7 @@ import UIKit
 
 
 /// Checking properties of an object or a view
-public struct SpecCheck<T> {
+public struct Check<T> {
     
     let element: T
     
@@ -22,7 +22,7 @@ public struct SpecCheck<T> {
 }
 
 /// Searching for views by their text or type
-public struct SpecFind<T> {
+public struct Find<T> {
     
     let element: T
     
@@ -33,7 +33,7 @@ public struct SpecFind<T> {
 }
 
 /// Prepare objects or views for certain state
-public struct SpecPrepare<T> {
+public struct Prepare<T> {
     
     let element: T
     
@@ -44,7 +44,7 @@ public struct SpecPrepare<T> {
 }
 
 /// Simulate actions on views or objects
-public struct SpecAction<T> {
+public struct Action<T> {
     
     let element: T
     
@@ -59,22 +59,31 @@ public struct SpecProperty<T> {
     
     let element: T
     
-    public let check: SpecCheck<T>
-    public let find: SpecFind<T>
-    public let prepare: SpecPrepare<T>
-    public let action: SpecAction<T>
+    /// Contains checks on supported elements
+    /// (like isVisible or hasSiblings, etc)
+    public let check: Check<T>
+    /// If you are looking for something, find is your guy
+    /// (You can find text, recurse through UIView structures, etc)
+    public let find: Find<T>
+    /// Prepares supported elements
+    /// (like prepare view controllers for testing, etc)
+    public let prepare: Prepare<T>
+    /// Actions on supported elements
+    /// (like tap on a button or execute a gesture recognizers targets)
+    public let action: Action<T>
     
     init(_ obj: T) {
         element = obj
         
-        check = SpecCheck(obj)
-        find = SpecFind(obj)
-        prepare = SpecPrepare(obj)
-        action = SpecAction(obj)
+        check = Check(obj)
+        find = Find(obj)
+        prepare = Prepare(obj)
+        action = Action(obj)
     }
     
 }
 
+/// Main property protocol which delivers basic element accessors
 public protocol PropertyProtocol {
     
     associatedtype PropertyParentType
@@ -84,6 +93,7 @@ public protocol PropertyProtocol {
 
 extension PropertyProtocol {
     
+    /// Main property used to access checks, finds, prepares and and actions for any supported elements
     public var spec: SpecProperty<Self> {
         get {
             return SpecProperty(self)
@@ -92,6 +102,7 @@ extension PropertyProtocol {
     
 }
 
+extension UIGestureRecognizer: PropertyProtocol { }
 extension UIView: PropertyProtocol { }
 extension UIViewController: PropertyProtocol { }
 

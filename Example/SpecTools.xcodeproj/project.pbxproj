@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1504FD4E1F50C6520000D7FA /* BasicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD4C1F50C6520000D7FA /* BasicSpec.swift */; };
 		1504FD4F1F50C6520000D7FA /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */; };
+		15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DE91F6443D400E06BD0 /* TableViewController.swift */; };
+		15074DEF1F667F0F00E06BD0 /* TableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */; };
+		15074DF21F6687B400E06BD0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DF11F6687B400E06BD0 /* TableViewCell.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -32,6 +35,9 @@
 		1504FD441F50C5E10000D7FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1504FD4C1F50C6520000D7FA /* BasicSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSpec.swift; sourceTree = "<group>"; };
 		1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		15074DE91F6443D400E06BD0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpec.swift; sourceTree = "<group>"; };
+		15074DF11F6687B400E06BD0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1581B2C91F57711D00DDDA6C /* generate_docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = generate_docs.sh; path = ../generate_docs.sh; sourceTree = "<group>"; };
 		25476FCE33DB8F6A74FDBAAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,9 +85,18 @@
 			children = (
 				1504FD4C1F50C6520000D7FA /* BasicSpec.swift */,
 				1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */,
+				15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */,
 				1504FD441F50C5E10000D7FA /* Info.plist */,
 			);
 			path = SpecToolsExampleTests;
+			sourceTree = "<group>";
+		};
+		15074DF01F66876700E06BD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15074DF11F6687B400E06BD0 /* TableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		1581B2C81F57710600DDDA6C /* Scripts */ = {
@@ -96,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				15074DE91F6443D400E06BD0 /* TableViewController.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -125,6 +141,7 @@
 		607FACD21AFB9204008FA782 /* Example for SpecTools */ = {
 			isa = PBXGroup;
 			children = (
+				15074DF01F66876700E06BD0 /* View */,
 				15A9D7461F5069C200CA2555 /* View controllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -401,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1504FD4F1F50C6520000D7FA /* ViewControllerSpec.swift in Sources */,
+				15074DEF1F667F0F00E06BD0 /* TableViewControllerSpec.swift in Sources */,
 				1504FD4E1F50C6520000D7FA /* BasicSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +428,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				15074DF21F6687B400E06BD0 /* TableViewCell.swift in Sources */,
+				15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

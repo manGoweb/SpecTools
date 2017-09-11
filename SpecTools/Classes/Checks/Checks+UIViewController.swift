@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: View controller
 
-extension SpecFind where T: UIViewController {
+extension Check where T: UIViewController {
     
     // MARK: Search methods for UIViewController
     
@@ -22,7 +22,7 @@ extension SpecFind where T: UIViewController {
         guard let nc = element.navigationController else {
             return false
         }
-        return nc.spec.find.has(viewController: viewController)
+        return nc.spec.check.has(viewController: viewController)
     }
     
     /// Check if a view controller has a child view controller
@@ -53,7 +53,7 @@ extension SpecFind where T: UIViewController {
 
 // MARK: - Navigation view controller
 
-extension SpecFind where T: UINavigationController {
+extension Check where T: UINavigationController {
     
     // MARK: Search methods for UINavigationController
     
