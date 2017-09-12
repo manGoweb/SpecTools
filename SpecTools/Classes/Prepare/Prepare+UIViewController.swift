@@ -72,7 +72,7 @@ extension Prepare where T: UIViewController {
     }
     
     /// Give view controller a navigation controller
-    public func assign<T>(navigationControllerOfClass classType: T.Type? = nil) where T: UINavigationController {
+    public func assignNavigationController<T>(ofClass classType: T.Type? = nil) where T: UINavigationController {
         var nc: UINavigationController
         if classType == nil {
             nc = UINavigationController(rootViewController: element)
