@@ -7,7 +7,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
 [![License](https://img.shields.io/cocoapods/l/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
 [![Platform](https://img.shields.io/cocoapods/p/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
-[![Docs](https://cdn.rawgit.com/manGoweb/SpecTools/master/docs/badge.svg?a=1)](https://github.com/manGoweb/SpecTools/tree/master/docs)
+[![Docs](https://raw.githubusercontent.com/manGoweb/SpecTools/master/docs/badge.svg?sanitize=true)](https://github.com/manGoweb/SpecTools/tree/master/docs)
 [![Twitter](https://img.shields.io/badge/twitter-@rafiki270-blue.svg?style=flat)](http://twitter.com/rafiki270)
 
 Library that helps you write less code when testing interface in your iOS apps.
