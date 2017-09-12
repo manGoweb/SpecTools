@@ -108,7 +108,7 @@ To run the example project:
 
 ## Documentation
 
-Jazzy based documentation is available here [![Docs](https://cdn.rawgit.com/manGoweb/SpecTools/master/docs/badge.svg?a=1)](https://github.com/manGoweb/SpecTools/tree/master/docs). Proper web based one is coming.
+Jazzy based documentation is available here [![Docs](https://raw.githubusercontent.com/manGoweb/SpecTools/master/docs/badge.svg?sanitize=true)](https://github.com/manGoweb/SpecTools/tree/master/docs). Proper web based one is coming.
 
 ## Requirements
 
