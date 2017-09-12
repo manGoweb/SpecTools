@@ -4,6 +4,7 @@
 
 ## Build generated
 build/
+docs/
 DerivedData/
 
 ## Various settings
