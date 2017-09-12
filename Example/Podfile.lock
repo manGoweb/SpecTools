@@ -4,37 +4,57 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Nimble (5.1.1)
+  - Nimble (7.0.1)
   - Nimble-Snapshots (4.4.0):
     - Nimble-Snapshots/Core (= 4.4.0)
   - Nimble-Snapshots/Core (4.4.0):
     - FBSnapshotTestCase (~> 2.0)
     - Nimble
     - Quick
-  - Quick (1.0.0)
+  - Quick (1.1.0)
   - SnapKit (3.2.0)
   - SpecTools (0.0.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - Nimble (~> 5.1.1)
+  - Nimble (from `https://github.com/Quick/Nimble.git`, branch `master`)
   - Nimble-Snapshots
-  - Quick (~> 1.0.0)
-  - SnapKit (~> 3.2.0)
+  - Quick (from `https://github.com/Quick/Quick.git`, branch `master`)
+  - SnapKit (from `https://github.com/SnapKit/SnapKit.git`, branch `swift-4`)
   - SpecTools (from `../`)
 
 EXTERNAL SOURCES:
+  Nimble:
+    :branch: master
+    :git: https://github.com/Quick/Nimble.git
+  Quick:
+    :branch: master
+    :git: https://github.com/Quick/Quick.git
+  SnapKit:
+    :branch: swift-4
+    :git: https://github.com/SnapKit/SnapKit.git
   SpecTools:
     :path: ../
 
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: a63252b16eba6cdebec4e4936388c90552165a68
+    :git: https://github.com/Quick/Nimble.git
+  Quick:
+    :commit: 3f5e7c6cc141b4c163e9d3b0d3280d4fa2d8da90
+    :git: https://github.com/Quick/Quick.git
+  SnapKit:
+    :commit: d31148f449abe819fd1a58d5e07e94874c7e6003
+    :git: https://github.com/SnapKit/SnapKit.git
+
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Nimble: 1b6670c36e5750169b9e4cc2e9cfa82a7603c69e
   Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
-  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  SpecTools: 1f7bf86efb49c81f1606ea2915c6d3e7dc7f0d2f
+  Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
+  SnapKit: c71c530b73cedd2a8b998098687001baff265086
+  SpecTools: b3105f0c7b447a758a48973d51c125d08aaf6c99
 
-PODFILE CHECKSUM: 06e85cb45c116d43d98bc9594145fe315977da95
+PODFILE CHECKSUM: 5823fb502705032cae4a1e7bfb7e6e7693f7c17c
 
 COCOAPODS: 1.3.1

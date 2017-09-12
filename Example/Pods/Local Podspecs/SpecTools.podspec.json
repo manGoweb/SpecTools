@@ -17,7 +17,7 @@
   },
   "social_media_url": "https://twitter.com/rafiki270",
   "platforms": {
-    "ios": "9.1"
+    "ios": "10.3"
   },
   "source_files": "SpecTools/Classes/**/*",
   "frameworks": "XCTest"

@@ -104,12 +104,12 @@ class ViewController: UIViewController {
     
     var didTapLabel1: Bool = false
     
-    func didTapLabel1Action(_ sender: UITapGestureRecognizer) {
+    @objc func didTapLabel1Action(_ sender: UITapGestureRecognizer) {
         print("Did tap label1")
         didTapLabel1 = true
     }
     
-    func didTapButton1(_ sender: UIButton) {
+    @objc func didTapButton1(_ sender: UIButton) {
         let c = TableViewController()
         navigationController?.pushViewController(c, animated: true)
     }
