@@ -135,6 +135,48 @@ it, simply add the following line to your Cartfile and than import the framework
 github "manGoweb/SpecTools"
 ```
 
+## Usage
+
+Following section should contain all of the methods available
+
+#### Action
+
+Simulate tap on a UIButton
+```Swift
+button1.spec.action.tap()
+// or
+button1.spec.action.tap(event: .touchUpInside)
+```
+
+Simulate tap on a view with UITapGestureRecognizer(s)
+```Swift
+view.spec.action.triggerTap()
+// or
+view.spec.action.triggerTap(taps: 3, touches: 2)
+```
+
+Execute action on any UIGestureRecognizer
+```Swift
+recognizer.spec.action.execute()
+```
+
+Get array of targets from any UIGestureRecognizer
+ - Return `[(target: AnyObject, action: Selector)]`
+```Swift
+recognizer.spec.action.getTargetInfo()
+```
+
+#### Checks
+
+Is view truly visible on the screen? Checks if the element (and all parent views) have superview, have alpha, are not hidden and have a valid on-screen frame.
+```Swift
+view.spec.check.isVisible() // Example 1
+// or
+view.spec.check.isVisible(on: viewController.view, visualize: .all) // Example 2
+```
+Example 1) Ignores the last view having no superview, expects it to be view controllers view for example
+Example 2) Checks visibility against another view, also an entire recursed view structure can be printed to the console
+
 ## Author
 
 Ondrej Rafaj, dev@mangoweb.cz
@@ -142,3 +184,4 @@ Ondrej Rafaj, dev@mangoweb.cz
 ## License
 
 SpecTools is available under the MIT license. See the LICENSE file for more info.
+
