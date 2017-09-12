@@ -26,10 +26,7 @@ extension Action where T: UIView {
         let recognizers = element.spec.find.all(gestureRecognizersOfType: UITapGestureRecognizer.self)
         for recognizer in recognizers {
             if recognizer.numberOfTapsRequired == taps && recognizer.numberOfTouchesRequired == touches {
-                let targetsInfo = recognizer.spec.action.getTargetInfo()
-                for info in targetsInfo {
-                    info.target.performSelector(onMainThread: info.action, with: nil, waitUntilDone: true)
-                }
+                recognizer.spec.action.execute()
             }
         }
     }
