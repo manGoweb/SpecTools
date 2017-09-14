@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Apple devices, this enum only contais first in a line/screensize for each device (iPhone 6 is a predecesor of iPhone 7 thus only 6 is shown)
-public enum SpecDeviceScreenSize {
+public enum DeviceScreenSize {
     /// iPhone 4
     case iPhone4
     /// iPhone 5
@@ -25,7 +25,7 @@ public enum SpecDeviceScreenSize {
     case iPadProLarge
     
     /// Return pixel size of the selected device
-    public static func size(for type: SpecDeviceScreenSize) -> CGSize {
+    public static func size(for type: DeviceScreenSize) -> CGSize {
         switch type {
         case .iPhone4:
             return CGSize(width: 320, height: 480)
@@ -63,8 +63,8 @@ extension Prepare where T: UIViewController {
     }
     
     /// Set a screensize of a desired device on a view of your view controller, you can specify a custom height. Custom height might be useful when scrollviews are present
-    public func set(viewSize: SpecDeviceScreenSize, height: CGFloat? = nil) {
-        var size = SpecDeviceScreenSize.size(for: viewSize)
+    public func set(viewSize: DeviceScreenSize, height: CGFloat? = nil) {
+        var size = DeviceScreenSize.size(for: viewSize)
         if height != nil && height! >= 0 {
             size.height = height!
         }

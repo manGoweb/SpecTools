@@ -18,7 +18,7 @@ extension Check where T: UIView {
     /// - Parameter on: Specify a root view to check against (if left as nil, last parent view will be assumed as root in a UIViewController so we do recommend to pass a root view to check against to have more dicisive result)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
     /// - Returns: Bool (true if found)
-    public func isVisible(on parentView: UIView? = nil, visualize: SpecVisualize = .none) -> Bool {
+    public func isVisible(on parentView: UIView? = nil, visualize: VisualizationType = .none) -> Bool {
         let result = isVisible(on: parentView, visualize: visualize, level: 0)
         if visualize != .none {
             print("Visibility check finished: \(result ? "visible" : "hidden")\n\n")
@@ -26,7 +26,7 @@ extension Check where T: UIView {
         return result
     }
     
-    private func isVisible(on parentView: UIView?, visualize: SpecVisualize, level: Int) -> Bool {
+    private func isVisible(on parentView: UIView?, visualize: VisualizationType, level: Int) -> Bool {
         // Print visualization if neccessary
         if visualize != .none {
             if level == 0 {

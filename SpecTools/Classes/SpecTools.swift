@@ -55,7 +55,7 @@ public struct Action<T> {
 }
 
 /// Main holding property. Any supported view or object will have .spec property available
-public struct SpecProperty<T> {
+public struct Property<T> {
     
     let element: T
     
@@ -87,16 +87,16 @@ public struct SpecProperty<T> {
 public protocol PropertyProtocol {
     
     associatedtype PropertyParentType
-    var spec: SpecProperty<PropertyParentType> { get }
+    var spec: Property<PropertyParentType> { get }
     
 }
 
 extension PropertyProtocol {
     
     /// Main property used to access checks, finds, prepares and and actions for any supported elements
-    public var spec: SpecProperty<Self> {
+    public var spec: Property<Self> {
         get {
-            return SpecProperty(self)
+            return Property(self)
         }
     }
     
