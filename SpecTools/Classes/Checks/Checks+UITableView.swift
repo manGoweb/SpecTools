@@ -11,7 +11,7 @@ import UIKit
 
 extension Check where T: UITableView {
     
-    // MARK: Table view data source checks
+    // MARK: UITableView
     
     /// Check if there are any cells that don't fit criteria specified in a closure
     /// - Parameter fit: Closure that needs to evaluate the cell which is passed onto it

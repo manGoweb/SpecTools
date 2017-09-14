@@ -20,3 +20,10 @@ fi
 printf "👾	Generating documentation\n"
 
 jazzy --podspec ./SpecTools.podspec
+
+# Move the docs to the mangoweb.github.io folder if it exists
+DIRECTORY="../../Web/mangoweb.github.io/SpecTools/docs"
+if [ -d "$DIRECTORY" ]; then
+	rm -rf "$DIRECTORY/latest"
+	cp -rf ./docs/ "$DIRECTORY/latest/"
+fi

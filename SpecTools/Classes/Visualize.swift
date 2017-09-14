@@ -12,7 +12,7 @@ import Foundation
 // MARK: - Settings
 
 /// Visualization types
-public enum SpecVisualize: Int {
+public enum VisualizationType: Int {
     /// No visualization
     case none
     /// Show classes only
@@ -27,7 +27,7 @@ public enum SpecVisualize: Int {
 
 class Visualize {
     
-    static func description(_ item: UIView, _ text: String?, _ visualize: SpecVisualize) -> String {
+    static func description(_ item: UIView, _ text: String?, _ visualize: VisualizationType) -> String {
         let className = String(describing: type(of: item))
         switch visualize {
         case .all:

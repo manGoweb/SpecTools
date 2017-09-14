@@ -12,7 +12,7 @@ import UIKit
 
 extension Action where T: UIButton {
     
-    // MARK: Action helper methods for UIButton
+    // MARK: UIButton
     
     /// Simulate tap on a button
     /// - Parameter event: Event type to trigger

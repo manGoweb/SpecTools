@@ -11,7 +11,7 @@ import UIKit
 
 extension Find where T: UITableView {
     
-    // MARK: Table view data source shortcuts
+    // MARK: UITableView
     
     /// Return number of sections on a table view data source
     /// - Returns: Int
