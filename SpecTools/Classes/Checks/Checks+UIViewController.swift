@@ -13,7 +13,7 @@ import Foundation
 
 extension Check where T: UIViewController {
     
-    // MARK: Search methods for UIViewController
+    // MARK: UIViewController
     
     /// Look for a specific view controller in your navigation stack
     /// - Parameter siblingInNavigationStack: View controller you are looking for
@@ -55,7 +55,7 @@ extension Check where T: UIViewController {
 
 extension Check where T: UINavigationController {
     
-    // MARK: Search methods for UINavigationController
+    // MARK: UINavigationController
     
     /// Check is navigation view controller contains certain view controller
     /// - Parameter viewController: View controller you are looking for
