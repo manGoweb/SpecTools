@@ -52,7 +52,7 @@ extension Action where T: UIGestureRecognizer {
                 // Getting target from iVars
                 let targetActionPairClass: AnyClass = NSClassFromString("UIGestureRecognizerTarget")!
                 let targetIvar: Ivar = class_getInstanceVariable(targetActionPairClass, "_target")
-                let targetObject: AnyObject = object_getIvar(target, targetIvar) as! AnyObject
+                let targetObject: AnyObject = object_getIvar(target, targetIvar) as AnyObject
                 
                 targetsInfo.append((target: targetObject, action: selector))
             }

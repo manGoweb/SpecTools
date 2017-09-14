@@ -85,7 +85,7 @@ extension Prepare where T: UIViewController {
     
     /// Give view controller a mock navigation controller which mainly allows for testing push/pop functionality
     public func assignMockNavigationController() -> MockNavigationController {
-        var nc = MockNavigationController(rootViewController: element)
+        let nc = MockNavigationController(rootViewController: element)
         nc.spec.prepare.simulatePresentViewController()
         return nc
     }

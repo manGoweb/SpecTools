@@ -13,7 +13,7 @@ PODS:
     - Quick
   - Quick (1.0.0)
   - SnapKit (3.2.0)
-  - SpecTools (0.0.1)
+  - SpecTools (0.0.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -33,8 +33,8 @@ SPEC CHECKSUMS:
   Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
-  SpecTools: 1f7bf86efb49c81f1606ea2915c6d3e7dc7f0d2f
+  SpecTools: fa0517363fe68eba12bba6c4db562aa1a73fc544
 
-PODFILE CHECKSUM: 06e85cb45c116d43d98bc9594145fe315977da95
+PODFILE CHECKSUM: 4785087ea69597b09cf0abc795b1c14fe5e761fc
 
 COCOAPODS: 1.3.1
