@@ -14,9 +14,9 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
 
 extension Action where T: UIView {
     
-    // MARK: Action helper methods for UIGestureRecognizer
+    // MARK: UIView
     
-    /// Simulate tap on a button
+    /// Simulate tap on a gesture recognizer
     /// - Parameter taps: Number of taps
     /// - Parameter touches: Number of touches
     public func triggerTap(taps: Int = 1, touches: Int = 1) {
@@ -35,7 +35,7 @@ extension Action where T: UIView {
 
 extension Action where T: UIGestureRecognizer {
     
-    // MARK: Retrieving targets from gesture recognizers
+    // MARK: UIGestureRecognizer
     
     /// Returns all actions and selectors for a gesture recognizer
     /// This method uses private API's and will most likely cause your app to be rejected if used outside of your test target
@@ -61,7 +61,7 @@ extension Action where T: UIGestureRecognizer {
         return targetsInfo
     }
     
-    /// Executes all targets on a gesture recognizer
+    /// Executes all targets on a specific gesture recognizer
     public func execute() {
         let targetsInfo = element.spec.action.getTargetInfo()
         for info in targetsInfo {

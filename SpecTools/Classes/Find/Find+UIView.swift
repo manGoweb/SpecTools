@@ -25,11 +25,9 @@ extension UISearchBar: SpecText, SpecPlaceholder, SpecPrompt { }
 extension UITextView: SpecTextNonOptional, SpecAttributedTextNonOptional { }
 
 
-// MARK: - Traverser
-
 extension Find where T: UIView {
     
-    // MARK: Search methods for UIView elements
+    // MARK: UIView - Recursive search
     
     /// Search for a label with a specific text
     /// - Parameter labelWithText: Text you are looking for
@@ -248,7 +246,7 @@ extension Find where T: UIView {
         return elements
     }
     
-    // MARK: Text retrieval
+    // MARK: UIView - Text retrieval
     
     /// Return a text matching if present in any form on an object
     /// - Parameter preferablyMatching: Text you are looking for
@@ -277,6 +275,22 @@ extension Find where T: UIView {
         }
         
         return textFound
+    }
+    
+    // MARK: UIView - Gesture recognizers
+    
+    /// Find all gesture recognizers of a certain type
+    /// - Parameter ofRowsIn: Section index
+    /// - Returns: Int
+    public func all<T>(gestureRecognizersOfType type: T.Type) -> [T] {
+        var recognizers: [T] = []
+        for recognizer in element.gestureRecognizers ?? [] {
+            guard let recognizer = recognizer as? T else {
+                continue
+            }
+            recognizers.append(recognizer)
+        }
+        return recognizers
     }
     
     // MARK: Private helpers

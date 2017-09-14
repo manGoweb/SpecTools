@@ -12,9 +12,9 @@ import UIKit
 
 extension Check where T: UIView {
     
-    // MARK: Checking visibility of a UI element on screen
+    // MARK: UIView
     
-    /// Return a text matching if present in any form on an object
+    /// Check if any view is/should be visible on screen
     /// - Parameter on: Specify a root view to check against (if left as nil, last parent view will be assumed as root in a UIViewController so we do recommend to pass a root view to check against to have more dicisive result)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
     /// - Returns: Bool (true if found)
@@ -25,6 +25,8 @@ extension Check where T: UIView {
         }
         return result
     }
+    
+    // MARK: Private methods
     
     private func isVisible(on parentView: UIView?, visualize: VisualizationType, level: Int) -> Bool {
         // Print visualization if neccessary
