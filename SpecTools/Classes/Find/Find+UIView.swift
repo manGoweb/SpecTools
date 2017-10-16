@@ -381,14 +381,16 @@ extension Find where T: UIView {
     
     private func handle<T>(elementOfType type: T.Type, text: String, visualize: VisualizationType) {
         if visualize != .none {
-            let className = String(describing: type(of: type))
+            //let className = String(describing: type(of: T.self))
+            let className = "Element"
             print("\(className) with text \"\(text)\" has not been found\n\n")
         }
     }
     
     private func handle<T>(elementOfType type: T.Type, visualize: VisualizationType) {
         if visualize != .none {
-            let className = String(describing: type(of: type))
+            //let className = String(describing: type(of: T.self))
+            let className = "Element"
             print("\(className) has not been found\n\n")
         }
     }

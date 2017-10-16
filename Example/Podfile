@@ -1,20 +1,19 @@
-platform :ios, '9.1'
+platform :ios, '10.3'
 
 #inhibit_all_warnings!
 use_frameworks!
 
 
 target 'SpecToolsExample' do
-  
-  pod 'SnapKit', '~> 3.2.0'
-
-  target 'SpecToolsExampleTests' do
-    inherit! :search_paths
-
-    pod 'SpecTools', :path => '../'
-    pod 'Quick', '~> 1.0.0'
-    pod 'Nimble', '~> 5.1.1'
-    pod 'FBSnapshotTestCase'
-    pod 'Nimble-Snapshots'
-  end
+    pod 'SnapKit'
+    
+    target 'SpecToolsExampleTests' do
+        inherit! :search_paths
+        
+        pod 'SpecTools', :path => '../'
+        pod 'Quick', :git => 'https://github.com/Quick/Quick.git', :branch => 'master'
+        pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'master'
+        pod 'FBSnapshotTestCase'
+        pod 'Nimble-Snapshots'
+    end
 end
