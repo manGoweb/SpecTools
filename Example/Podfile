@@ -5,16 +5,15 @@ use_frameworks!
 
 
 target 'SpecToolsExample' do
-  
-  pod 'SnapKit', :git => 'https://github.com/SnapKit/SnapKit.git', :branch => 'swift-4'
-
-  target 'SpecToolsExampleTests' do
-    inherit! :search_paths
-
-    pod 'SpecTools', :path => '../'
-    pod 'Quick', :git => 'https://github.com/Quick/Quick.git', :branch => 'master'
-    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'master'
-    pod 'FBSnapshotTestCase'
-    pod 'Nimble-Snapshots'
-  end
+    pod 'SnapKit'
+    
+    target 'SpecToolsExampleTests' do
+        inherit! :search_paths
+        
+        pod 'SpecTools', :path => '../'
+        pod 'Quick', :git => 'https://github.com/Quick/Quick.git', :branch => 'master'
+        pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'master'
+        pod 'FBSnapshotTestCase'
+        pod 'Nimble-Snapshots'
+    end
 end

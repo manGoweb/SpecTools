@@ -8,9 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SpecTools'
-  s.version          = '1.0.0-alpha2'
-  s.summary          = 'Library that helps you write less code when testing interface in your iOS apps.'
-
+  s.version          = '1.0.0'
+  s.summary          = 'Library that helps you write less code when testing your iOS apps.'
 
   s.description      = 'Write less test code, this library contains a set of tools that are split in a few categories which have very specific helper functionality. All these are only available to their relevant elements.'
 
@@ -24,12 +23,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.3'
 
   s.source_files = 'SpecTools/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SpecTools' => ['SpecTools/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'XCTest'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc = true
+  s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
