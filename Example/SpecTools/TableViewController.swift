@@ -12,6 +12,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
+    var didTapOnCell: ((_ indexPath: IndexPath)->())?
+    
     
     // MARK: View lifecycle
     
@@ -38,6 +40,10 @@ class TableViewController: UITableViewController {
         cell.customLabel.text = "Index: \(indexPath.row)"
         cell.customImageView.image = UIImage(named: "Icon-Small-40")
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didTapOnCell?(indexPath)
     }
     
 }
