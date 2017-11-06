@@ -1,0 +1,6 @@
+framework module SpecTools {
+  umbrella header "SpecTools-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
