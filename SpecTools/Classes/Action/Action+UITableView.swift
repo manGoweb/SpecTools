@@ -16,8 +16,9 @@ extension Action where T: UITableView {
     /// Simulate tap on a cell in table view
     /// - Parameter row: Index of the row to tap on
     /// - Parameter section: Index of the section to tap on
-    public func tap(row: Int, section: Int = 0) {
+    @discardableResult public func tap(row: Int, section: Int = 0) -> Action {
         element.delegate?.tableView?(element, didSelectRowAt: IndexPath(row: row, section: section))
+        return self
     }
     
 }

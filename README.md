@@ -14,7 +14,7 @@ Library that helps you write less code when testing interface in your iOS apps.
 
 ## Implementation
 
-After you add SpecTools framework a set of options will become available for most of the UI elements through a spec property.
+After you add SpecTools framework a set of options will become available for most of the UI elements through a spec property. Available for iOS and tvOS 
 
 These are:
 * action
@@ -181,7 +181,7 @@ collectionView.spec.action.tap(item: 3)
 collectionView.spec.action.tap(item: 2, section: 1)
 ```
 
-#### Executing gesture recognizers
+#### Executing gesture recognizers (not available on tvOS)
 
 Execute action on any UIGestureRecognizer
 ```Swift
@@ -193,6 +193,25 @@ Get array of targets from any UIGestureRecognizer
 ```Swift
 recognizer.spec.action.getTargetInfo()
 ```
+
+#### Simulating scrolls
+
+Simulate scrolling on any UIScrollView (or table/collection view) while calling all available delegate methods in the right order along the way
+ - decelerate sets if the scroll view should simulate decelerating after dragging
+```Swift
+scrollView.spec.action.scroll(to: CGPoint(x: 500, y: 0), decelerate: true)
+```
+------
+Simulate scrolling on any UIScrollView to a specific horizontal page
+```Swift
+scrollView.spec.action.scroll(horizontalPageIndex: 2, decelerate: false)
+```
+------
+Simulate scrolling on any UIScrollView to a specific vertical page
+```Swift
+scrollView.spec.action.scroll(verticalPageIndex: 5, decelerate: true)
+```
+------
 
 ### Checks
 

@@ -16,8 +16,9 @@ extension Action where T: UICollectionView {
     /// Simulate tap on a cell in collection view
     /// - Parameter item: Index of an item to tap on
     /// - Parameter section: Index of the section to tap on
-    public func tap(item: Int, section: Int = 0) {
+    @discardableResult public func tap(item: Int, section: Int = 0) -> Action {
         element.delegate?.collectionView?(element, didSelectItemAt: IndexPath(item: item, section: section))
+        return self
     }
     
 }

@@ -16,7 +16,7 @@ extension Action where T: UIScrollView {
     /// Simulate scroll to a given point
     /// - Parameter to: Target offset value
     /// - Parameter decelerate: Enables deceleration after dragging
-    public func scroll(to point: CGPoint, decelerate: Bool = false) {
+    @discardableResult public func scroll(to point: CGPoint, decelerate: Bool = false) -> Action {
         element.delegate?.scrollViewWillBeginDragging?(element)
         
         element.contentOffset = point
@@ -32,22 +32,25 @@ extension Action where T: UIScrollView {
             element.delegate?.scrollViewWillBeginDecelerating?(element)
             element.delegate?.scrollViewDidEndDecelerating?(element)
         }
+        return self
     }
     
     /// Simulate scroll to a given page horizontally
     /// - Parameter to: Target page index
     /// - Parameter decelerate: Enables deceleration after dragging
-    public func scroll(horizontalPageIndex index: Int, decelerate: Bool = false) {
+    @discardableResult public func scroll(horizontalPageIndex index: Int, decelerate: Bool = false) -> Action {
         let x = CGFloat(index) * element.frame.width
         scroll(to: CGPoint(x: x, y: element.contentOffset.y))
+        return self
     }
     
     /// Simulate scroll to a given page vertically
     /// - Parameter to: Target page index
     /// - Parameter decelerate: Enables deceleration after dragging
-    public func scroll(verticalPageIndex index: Int, decelerate: Bool = false) {
+    @discardableResult public func scroll(verticalPageIndex index: Int, decelerate: Bool = false) -> Action {
         let y = CGFloat(index) * element.frame.height
         scroll(to: CGPoint(x: element.contentOffset.x, y: y))
+        return self
     }
     
 }

@@ -49,30 +49,33 @@ extension Prepare where T: UIViewController {
     // MARK: Preparation methods for UIViewController
     
     /// Will touch view of a view controller in order to get loadView and viewDidLoad called, than manually calls viewWillAppear and viewDidAppear with animations disabled
-    public func simulatePresentViewController() {
+    @discardableResult public func simulatePresentViewController() -> Prepare {
         element.loadViewIfNeeded()
         element.viewWillAppear(false)
         element.viewDidAppear(false)
+        return self
     }
     
     /// Set a new size for a view controllers view during runtime
-    public func set(viewSize: CGSize) {
+    @discardableResult public func set(viewSize: CGSize) -> Prepare {
         element.view.frame.size = viewSize
         element.view.setNeedsLayout()
         element.view.layoutIfNeeded()
+        return self
     }
     
     /// Set a screensize of a desired device on a view of your view controller, you can specify a custom height. Custom height might be useful when scrollviews are present
-    public func set(viewSize: DeviceScreenSize, height: CGFloat? = nil) {
+    @discardableResult public func set(viewSize: DeviceScreenSize, height: CGFloat? = nil) -> Prepare {
         var size = DeviceScreenSize.size(for: viewSize)
         if height != nil && height! >= 0 {
             size.height = height!
         }
         set(viewSize: size)
+        return self
     }
     
     /// Give view controller a navigation controller
-    public func assignNavigationController<T>(ofClass classType: T.Type? = nil) where T: UINavigationController {
+    @discardableResult public func assignNavigationController<T>(ofClass classType: T.Type? = nil) -> Prepare where T: UINavigationController {
         var nc: UINavigationController
         if classType == nil {
             nc = UINavigationController(rootViewController: element)
@@ -81,13 +84,14 @@ extension Prepare where T: UIViewController {
             nc = classType!.init(rootViewController: element)
         }
         nc.spec.prepare.simulatePresentViewController()
+        return self
     }
     
     /// Give view controller a mock navigation controller which mainly allows for testing push/pop functionality
-    public func assignMockNavigationController() -> MockNavigationController {
+    @discardableResult public func assignMockNavigationController() -> Prepare {
         let nc = MockNavigationController(rootViewController: element)
         nc.spec.prepare.simulatePresentViewController()
-        return nc
+        return self
     }
     
 }

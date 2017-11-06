@@ -21,7 +21,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
         /// Simulate tap on a gesture recognizer
         /// - Parameter taps: Number of taps
         /// - Parameter touches: Number of touches
-        public func triggerTap(taps: Int = 1, touches: Int = 1) {
+        @discardableResult public func triggerTap(taps: Int = 1, touches: Int = 1) -> Action {
             if element.isUserInteractionEnabled == false {
                 fatalError("User interactions are disabled. Gesture recognizer can't be used")
             }
@@ -31,8 +31,8 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
                     recognizer.spec.action.execute()
                 }
             }
+            return self
         }
-        
         
     }
     
@@ -66,11 +66,12 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
         }
         
         /// Executes all targets on a specific gesture recognizer
-        public func execute() {
+        @discardableResult public func execute() -> Action {
             let targetsInfo = element.spec.action.getTargetInfo()
             for info in targetsInfo {
                 info.target.performSelector(onMainThread: info.action, with: nil, waitUntilDone: true)
             }
+            return self
         }
         
     }

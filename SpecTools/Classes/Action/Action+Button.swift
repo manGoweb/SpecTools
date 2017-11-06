@@ -16,8 +16,9 @@ extension Action where T: UIButton {
     
     /// Simulate tap on a button
     /// - Parameter event: Event type to trigger
-    public func tap(event: UIControlEvents = .touchUpInside) {
+    @discardableResult public func tap(event: UIControlEvents = .touchUpInside) -> Action {
         element.sendActions(for: event)
+        return self
     }
     
 }
