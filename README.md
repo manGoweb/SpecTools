@@ -2,6 +2,7 @@
 
 # SpecTools
 
+[![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![CircleCI](https://img.shields.io/circleci/project/github/manGoweb/SpecTools/master.svg?style=plastic)](https://circleci.com/gh/manGoweb/SpecTools)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SpecTools.svg?style=flat)](http://cocoapods.org/pods/SpecTools)
@@ -11,6 +12,11 @@
 [![Twitter](https://img.shields.io/badge/twitter-@rafiki270-blue.svg?style=flat)](http://twitter.com/rafiki270)
 
 Library that helps you write less code when testing interface in your iOS apps.
+
+
+## Slack
+
+Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel #spectools
 
 ## Implementation
 
