@@ -11,12 +11,13 @@
 [![Docs](http://mangoweb.github.io/SpecTools/docs/latest/badge.svg)](http://mangoweb.github.io/SpecTools/docs/latest/)
 [![Twitter](https://img.shields.io/badge/twitter-@rafiki270-blue.svg?style=flat)](http://twitter.com/rafiki270)
 
-Library that helps you write less code when testing interface in your iOS apps.
+## 
 
+Library that helps you write less code when testing interface in your iOS apps.
 
 ## Slack
 
-Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel #spectools
+Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel <b>#help-spectools</b>
 
 ## Implementation
 
