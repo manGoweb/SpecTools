@@ -123,10 +123,6 @@ Online documentation should always reflect the latest code available on `master`
 
 This library can be run completely independently. It does not need quick and nimble although we highly recommend your give these libraries a go!
 
-## Installation
-
-For Swift 4 support please refer to `swift4` branch!
-
 #### Cocoapods
 
 SpecTools is available through [CocoaPods](http://cocoapods.org). To install
