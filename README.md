@@ -483,9 +483,11 @@ viewController.spec.prepare.assignMockNavigationController()
 
 ## Authors
 
-Ondrej Rafaj, developers@mangoweb.cz
-Jonathan Augele, jona2k5@yahoo.com
-David Harris, davidaharris@outlook.com
+- Ondrej Rafaj, developers@mangoweb.cz
+
+- Jonathan Augele, jona2k5@yahoo.com
+
+- David Harris, davidaharris@outlook.com
 
 ## License
 
