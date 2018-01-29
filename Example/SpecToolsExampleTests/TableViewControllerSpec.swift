@@ -46,13 +46,13 @@ class TableViewControllerSpec: QuickSpec {
                     guard let cell = cell as? TableViewCell else {
                         return false
                     }
-                    if cell.textLabel?.text?.characters.count == 0 {
+                    if cell.textLabel?.text?.count == 0 {
                         return false
                     }
-                    if cell.detailTextLabel?.text?.characters.count == 0 {
+                    if cell.detailTextLabel?.text?.count == 0 {
                         return false
                     }
-                    if cell.customLabel.text?.characters.count == 0 {
+                    if cell.customLabel.text?.count == 0 {
                         return false
                     }
                     return true
