@@ -32,14 +32,14 @@ class Visualize {
         switch visualize {
         case .all:
             let textToPrint: String = (text != nil) ? ": " + text! : ""
-            return "\(className): \(NSStringFromCGRect(item.frame)); \(textToPrint)"
+            return "\(className): \(NSCoder.string(for: item.frame)); \(textToPrint)"
         case .classes:
             return "\(className)"
         case .text:
             let textToPrint: String = (text != nil) ? ": " + text! : ""
             return "\(className)\(textToPrint)"
         case .frames:
-            return "\(className): \(NSStringFromCGRect(item.frame))"
+            return "\(className): \(NSCoder.string(for: item.frame))"
         default:
             return ""
         }
