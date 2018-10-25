@@ -20,11 +20,10 @@
 
 #import <Foundation/Foundation.h>
 
+extern bool _swift_reportFatalErrorsToDebugger;
+
 //! Project version number for CwlUtils.
-FOUNDATION_EXPORT double CwlPreconditionTestingVersionNumber;
+FOUNDATION_EXPORT double CwlPreconditionTesting_POSIXVersionNumber;
 
 //! Project version string for CwlUtils.
-FOUNDATION_EXPORT const unsigned char CwlAssertingTestingVersionString[];
-
-#include "CwlMachBadInstructionHandler.h"
-#include "CwlCatchException.h"
+FOUNDATION_EXPORT const unsigned char CwlAssertingTesting_POSIXVersionString[];
