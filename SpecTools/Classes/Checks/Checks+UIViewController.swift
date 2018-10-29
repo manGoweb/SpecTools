@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 // MARK: View controller
@@ -29,7 +30,7 @@ extension Check where T: UIViewController {
     /// - Parameter childViewController: View controller you are looking for
     /// - Returns: Bool (true if found)
     public func has(childViewController viewController: UIViewController) -> Bool {
-        return element.childViewControllers.contains(viewController)
+        return element.children.contains(viewController)
     }
     
     /// Check if a view controller has a specific class type in its navigation stack
@@ -46,7 +47,7 @@ extension Check where T: UIViewController {
     /// - Parameter childViewControllerClass: Class of a view controller you are looking for
     /// - Returns: Bool (true if found)
     public func contains<T>(childViewControllerClass viewControllerClass: T.Type) -> Bool where T: UIViewController {
-        return element.childViewControllers.contains(where: { type(of: $0) == viewControllerClass })
+        return element.children.contains(where: { type(of: $0) == viewControllerClass })
     }
     
 }
