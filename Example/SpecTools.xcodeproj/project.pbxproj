@@ -12,7 +12,6 @@
 		15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DE91F6443D400E06BD0 /* TableViewController.swift */; };
 		15074DEF1F667F0F00E06BD0 /* TableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */; };
 		15074DF21F6687B400E06BD0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DF11F6687B400E06BD0 /* TableViewCell.swift */; };
-		15F9BA181F94FF1D00245DF2 /* circle.yml in Resources */ = {isa = PBXBuildFile; fileRef = 15F9BA171F94FF1D00245DF2 /* circle.yml */; };
 		40E0CC079E7C8FE96ED5C342 /* Pods_TVExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46141C4B85516DCBD9FA4DC0 /* Pods_TVExample.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -58,7 +57,6 @@
 		1581B2C91F57711D00DDDA6C /* generate_docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = generate_docs.sh; path = ../generate_docs.sh; sourceTree = "<group>"; };
 		15F9BA131F94FB3500245DF2 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = install.sh; path = ../Scripts/install.sh; sourceTree = "<group>"; };
 		15F9BA141F94FB3500245DF2 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = ../Scripts/build.sh; sourceTree = "<group>"; };
-		15F9BA171F94FF1D00245DF2 /* circle.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = circle.yml; path = ../circle.yml; sourceTree = "<group>"; };
 		1D5CA6E801DB8A91D3E70DE6 /* Pods_TVExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25476FCE33DB8F6A74FDBAAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +154,6 @@
 		1581B2C81F57710600DDDA6C /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				15F9BA171F94FF1D00245DF2 /* circle.yml */,
 				15F9BA141F94FB3500245DF2 /* build.sh */,
 				15F9BA131F94FB3500245DF2 /* install.sh */,
 				1581B2C91F57711D00DDDA6C /* generate_docs.sh */,
@@ -432,7 +429,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F9BA181F94FF1D00245DF2 /* circle.yml in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
