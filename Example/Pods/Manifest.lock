@@ -2,7 +2,7 @@ PODS:
   - Nimble (7.3.1)
   - Quick (1.3.2)
   - SnapKit (4.2.0)
-  - SpecTools (1.2.0)
+  - SpecTools (1.1.1)
 
 DEPENDENCIES:
   - Nimble
@@ -24,7 +24,7 @@ SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SpecTools: 379345b4fcee92e578817ff0aeb0c2099865d52a
+  SpecTools: 76f96eba2e12f3f9d374ac6b75ce38da97b6ad66
 
 PODFILE CHECKSUM: 75022a650debfd62f749637ced8ed249be1a9563
 

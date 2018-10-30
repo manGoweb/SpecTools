@@ -1,6 +1,6 @@
 {
   "name": "SpecTools",
-  "version": "1.2.0",
+  "version": "1.1.1",
   "summary": "Library that helps you write less code when testing your iOS apps.",
   "description": "Write less test code, this library contains a set of tools that are split in a few categories which have very specific helper functionality. All these are only available to their relevant elements.",
   "homepage": "https://github.com/manGoweb/SpecTools",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/manGoweb/SpecTools.git",
-    "tag": "1.2.0"
+    "tag": "1.1.1"
   },
   "social_media_url": "https://twitter.com/rafiki270",
   "platforms": {
