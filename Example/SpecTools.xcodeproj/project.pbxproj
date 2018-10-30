@@ -19,6 +19,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9742DFBD958C41A0D4A320A7 /* Pods_SpecToolsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA48DE5F6072FA17B587A4CF /* Pods_SpecToolsExample.framework */; };
 		C65796F10C08144A51ED4CD8 /* Pods_TVExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5CA6E801DB8A91D3E70DE6 /* Pods_TVExampleTests.framework */; };
+		DA62C52F3E9A07FA2E6034DA /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */; };
+		DA674C49DCD23F74F6B91984 /* LabeledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F41B96D384A3274587E76 /* LabeledView.swift */; };
 		F230246CE764371409137DF7 /* Pods_SpecToolsExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */; };
 		F4A8DD811FAB3C3A00237CF6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8DD801FAB3C3A00237CF6 /* CollectionViewController.swift */; };
 		F4A8DD851FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8DD841FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift */; };
@@ -78,6 +80,8 @@
 		CEB96607FEDF79B741ECC275 /* SpecTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpecTools.podspec; path = ../SpecTools.podspec; sourceTree = "<group>"; };
 		D1BC6C635B933789988F6829 /* Pods-SpecToolsExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecToolsExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecToolsExampleTests/Pods-SpecToolsExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA48DE5F6072FA17B587A4CF /* Pods_SpecToolsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		DA6F41B96D384A3274587E76 /* LabeledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabeledView.swift; sourceTree = "<group>"; };
 		DB1653D35AA1B0DA36A7E500 /* Pods-SpecTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecTools_Tests/Pods-SpecTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DFB0C922BA6451420392BB90 /* Pods-TVExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVExampleTests/Pods-TVExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0880E6B85859025B2200B60 /* Pods-TVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVExample/Pods-TVExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				15074DF11F6687B400E06BD0 /* TableViewCell.swift */,
+				DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */,
+				DA6F41B96D384A3274587E76 /* LabeledView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -628,6 +634,8 @@
 				15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F4A8DD811FAB3C3A00237CF6 /* CollectionViewController.swift in Sources */,
+				DA62C52F3E9A07FA2E6034DA /* SwipeView.swift in Sources */,
+				DA674C49DCD23F74F6B91984 /* LabeledView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
