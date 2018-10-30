@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'SpecTools'
-    s.version          = '1.2.0'
+    s.version          = '1.1.1'
     s.summary          = 'Library that helps you write less code when testing your iOS apps.'
 
     s.description      = 'Write less test code, this library contains a set of tools that are split in a few categories which have very specific helper functionality. All these are only available to their relevant elements.'
