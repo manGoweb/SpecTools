@@ -13,11 +13,11 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
 
 
 #if os(iOS)
-    
+
     extension Action where T: UIView {
-        
+
         // MARK: UIView
-        
+
         /// Simulate tap on a gesture recognizer
         /// - Parameter taps: Number of taps
         /// - Parameter touches: Number of touches
@@ -33,38 +33,52 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
             }
             return self
         }
-        
+
+        /// Simulate swipe on a gesture recognizer
+        /// - Parameter direction: Specify swipe direction: .up, .left, .right, .down
+        @discardableResult public func triggerSwipe(direction: UISwipeGestureRecognizer.Direction) -> Action {
+            guard element.isUserInteractionEnabled else {
+                fatalError("User interactions are disabled. Gesture recognizer can't be used.")
+            }
+            let recognizers = element.spec.find.all(gestureRecognizersOfType: UISwipeGestureRecognizer.self)
+            for recognizer in recognizers where recognizer.direction == direction {
+                recognizer.spec.action.execute()
+            }
+
+            return self
+        }
+
     }
-    
-    
+
+
     extension Action where T: UIGestureRecognizer {
-        
+
         // MARK: UIGestureRecognizer
-        
+
         /// Returns all actions and selectors for a gesture recognizer
         /// This method uses private API's and will most likely cause your app to be rejected if used outside of your test target
         /// - Returns: [(target: AnyObject, action: Selector)] Array of action/selector tuples
         public func getTargetInfo() -> TargetActionInfo {
             var targetsInfo: TargetActionInfo = []
-            
+
             if let targets = element.value(forKeyPath: "_targets") as? [NSObject] {
                 for target in targets {
                     // Getting selector by parsing the description string of a UIGestureRecognizerTarget
                     let selectorString = String.init(describing: target).components(separatedBy: ", ").first!.replacingOccurrences(of: "(action=", with: "")
                     let selector = NSSelectorFromString(selectorString)
-                    
+
                     // Getting target from iVars
                     let targetActionPairClass: AnyClass = NSClassFromString("UIGestureRecognizerTarget")!
                     let targetIvar: Ivar = class_getInstanceVariable(targetActionPairClass, "_target")!
                     let targetObject: AnyObject = object_getIvar(target, targetIvar) as AnyObject
-                    
+
                     targetsInfo.append((target: targetObject, action: selector))
                 }
             }
-            
+
             return targetsInfo
         }
-        
+
         /// Executes all targets on a specific gesture recognizer
         @discardableResult public func execute() -> Action {
             let targetsInfo = element.spec.action.getTargetInfo()
@@ -73,7 +87,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
             }
             return self
         }
-        
+
     }
-    
+
 #endif

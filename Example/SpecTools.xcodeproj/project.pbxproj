@@ -12,14 +12,17 @@
 		15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DE91F6443D400E06BD0 /* TableViewController.swift */; };
 		15074DEF1F667F0F00E06BD0 /* TableViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */; };
 		15074DF21F6687B400E06BD0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15074DF11F6687B400E06BD0 /* TableViewCell.swift */; };
-		15F9BA181F94FF1D00245DF2 /* circle.yml in Resources */ = {isa = PBXBuildFile; fileRef = 15F9BA171F94FF1D00245DF2 /* circle.yml */; };
 		40E0CC079E7C8FE96ED5C342 /* Pods_TVExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46141C4B85516DCBD9FA4DC0 /* Pods_TVExample.framework */; };
+		4EEB39D421882998004D9295 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEB39D321882998004D9295 /* SwipeViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9742DFBD958C41A0D4A320A7 /* Pods_SpecToolsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA48DE5F6072FA17B587A4CF /* Pods_SpecToolsExample.framework */; };
 		C65796F10C08144A51ED4CD8 /* Pods_TVExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5CA6E801DB8A91D3E70DE6 /* Pods_TVExampleTests.framework */; };
+		DA62C52F3E9A07FA2E6034DA /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */; };
+		DA674C49DCD23F74F6B91984 /* LabeledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F41B96D384A3274587E76 /* LabeledView.swift */; };
+		DA6C851CF48875F2E30AD9F7 /* SwipeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68C9608FD96EFF171ED130 /* SwipeViewControllerSpec.swift */; };
 		F230246CE764371409137DF7 /* Pods_SpecToolsExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */; };
 		F4A8DD811FAB3C3A00237CF6 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8DD801FAB3C3A00237CF6 /* CollectionViewController.swift */; };
 		F4A8DD851FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8DD841FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift */; };
@@ -58,11 +61,11 @@
 		1581B2C91F57711D00DDDA6C /* generate_docs.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = generate_docs.sh; path = ../generate_docs.sh; sourceTree = "<group>"; };
 		15F9BA131F94FB3500245DF2 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = install.sh; path = ../Scripts/install.sh; sourceTree = "<group>"; };
 		15F9BA141F94FB3500245DF2 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = ../Scripts/build.sh; sourceTree = "<group>"; };
-		15F9BA171F94FF1D00245DF2 /* circle.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = circle.yml; path = ../circle.yml; sourceTree = "<group>"; };
 		1D5CA6E801DB8A91D3E70DE6 /* Pods_TVExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25476FCE33DB8F6A74FDBAAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4025987761D8603D7A3EF403 /* Pods_SpecToolsExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46141C4B85516DCBD9FA4DC0 /* Pods_TVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEB39D321882998004D9295 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		573468F956F5B1FC134B10EA /* Pods-TVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVExample/Pods-TVExample.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SpecToolsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpecToolsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,9 +80,12 @@
 		A4924F5F25B255B44D41CD79 /* Pods-SpecToolsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecToolsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecToolsExample/Pods-SpecToolsExample.release.xcconfig"; sourceTree = "<group>"; };
 		ACE67D9AE3CBE275C0B5F91A /* Pods-SpecTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecTools_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecTools_Example/Pods-SpecTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7CF033E9DE2320B8E03AF79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CEB96607FEDF79B741ECC275 /* SpecTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpecTools.podspec; path = ../SpecTools.podspec; sourceTree = "<group>"; };
+		CEB96607FEDF79B741ECC275 /* SpecTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpecTools.podspec; path = ../SpecTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D1BC6C635B933789988F6829 /* Pods-SpecToolsExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecToolsExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecToolsExampleTests/Pods-SpecToolsExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DA48DE5F6072FA17B587A4CF /* Pods_SpecToolsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpecToolsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		DA68C9608FD96EFF171ED130 /* SwipeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewControllerSpec.swift; sourceTree = "<group>"; };
+		DA6F41B96D384A3274587E76 /* LabeledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabeledView.swift; sourceTree = "<group>"; };
 		DB1653D35AA1B0DA36A7E500 /* Pods-SpecTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpecTools_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpecTools_Tests/Pods-SpecTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DFB0C922BA6451420392BB90 /* Pods-TVExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVExampleTests/Pods-TVExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0880E6B85859025B2200B60 /* Pods-TVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVExample/Pods-TVExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,9 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				1504FD4C1F50C6520000D7FA /* BasicSpec.swift */,
-				1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */,
-				15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */,
 				F4A8DD841FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift */,
+				DA68C9608FD96EFF171ED130 /* SwipeViewControllerSpec.swift */,
+				15074DEE1F667F0F00E06BD0 /* TableViewControllerSpec.swift */,
+				1504FD4D1F50C6520000D7FA /* ViewControllerSpec.swift */,
 				1504FD441F50C5E10000D7FA /* Info.plist */,
 			);
 			path = SpecToolsExampleTests;
@@ -149,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				15074DF11F6687B400E06BD0 /* TableViewCell.swift */,
+				DA6621D12D0DCFD3C5921A21 /* SwipeView.swift */,
+				DA6F41B96D384A3274587E76 /* LabeledView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -156,7 +165,6 @@
 		1581B2C81F57710600DDDA6C /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				15F9BA171F94FF1D00245DF2 /* circle.yml */,
 				15F9BA141F94FB3500245DF2 /* build.sh */,
 				15F9BA131F94FB3500245DF2 /* install.sh */,
 				1581B2C91F57711D00DDDA6C /* generate_docs.sh */,
@@ -170,6 +178,7 @@
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				15074DE91F6443D400E06BD0 /* TableViewController.swift */,
 				F4A8DD801FAB3C3A00237CF6 /* CollectionViewController.swift */,
+				4EEB39D321882998004D9295 /* SwipeViewController.swift */,
 			);
 			name = "View controllers";
 			sourceTree = "<group>";
@@ -432,7 +441,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F9BA181F94FF1D00245DF2 /* circle.yml in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -620,6 +628,7 @@
 				15074DEF1F667F0F00E06BD0 /* TableViewControllerSpec.swift in Sources */,
 				1504FD4E1F50C6520000D7FA /* BasicSpec.swift in Sources */,
 				F4A8DD851FAB3FA000237CF6 /* CollectionViewControllerSpecs.swift in Sources */,
+				DA6C851CF48875F2E30AD9F7 /* SwipeViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +641,9 @@
 				15074DEA1F6443D400E06BD0 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F4A8DD811FAB3C3A00237CF6 /* CollectionViewController.swift in Sources */,
+				4EEB39D421882998004D9295 /* SwipeViewController.swift in Sources */,
+				DA62C52F3E9A07FA2E6034DA /* SwipeView.swift in Sources */,
+				DA674C49DCD23F74F6B91984 /* LabeledView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

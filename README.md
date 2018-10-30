@@ -184,6 +184,14 @@ collectionView.spec.action.tap(item: 3)
 collectionView.spec.action.tap(item: 2, section: 1)
 ```
 
+#### Simulating swipes
+
+Simulate swipe on a view with UISwipeGestureRecognizer(s)
+```Swift
+view.spec.action.triggerSwipe(direction: .up)
+```
+------
+
 #### Executing gesture recognizers (not available on tvOS)
 
 Execute action on any UIGestureRecognizer
@@ -488,8 +496,9 @@ viewController.spec.prepare.assignMockNavigationController()
 ## Contributors
 
 - Jonathan Augele, jona2k5@yahoo.com
-
 - David Harris, davidaharris@outlook.com
+- Karol Kozub, karol.kozub@gmail.com
+- Mateusz Szklarek, mateusz.szklarek@icloud.com
 
 ## License
 
