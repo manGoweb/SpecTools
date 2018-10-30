@@ -170,11 +170,6 @@ view.spec.action.triggerTap()
 view.spec.action.triggerTap(taps: 3, touches: 2)
 ```
 ------
-Simulate swipe on a view with UISwipeGestureRecognizer(s)
-```Swift
-view.spec.action.triggerSwipe(direction: .up)
-```
-------
 Simulate tap on a UITableView cell
 ```Swift
 tableView.spec.action.tap(row: 6)
@@ -188,6 +183,14 @@ collectionView.spec.action.tap(item: 3)
 // or
 collectionView.spec.action.tap(item: 2, section: 1)
 ```
+
+#### Simulating swipes
+
+Simulate swipe on a view with UISwipeGestureRecognizer(s)
+```Swift
+view.spec.action.triggerSwipe(direction: .up)
+```
+------
 
 #### Executing gesture recognizers (not available on tvOS)
 
