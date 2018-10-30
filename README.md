@@ -170,6 +170,11 @@ view.spec.action.triggerTap()
 view.spec.action.triggerTap(taps: 3, touches: 2)
 ```
 ------
+Simulate swipe on a view with UISwipeGestureRecognizer(s)
+```Swift
+view.spec.action.triggerSwipe(direction: .up)
+```
+------
 Simulate tap on a UITableView cell
 ```Swift
 tableView.spec.action.tap(row: 6)
