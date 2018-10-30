@@ -496,8 +496,9 @@ viewController.spec.prepare.assignMockNavigationController()
 ## Contributors
 
 - Jonathan Augele, jona2k5@yahoo.com
-
 - David Harris, davidaharris@outlook.com
+- Karol Kozub, karol.kozub@gmail.com
+- Mateusz Szklarek, mateusz.szklarek@icloud.com
 
 ## License
 
