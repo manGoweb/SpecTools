@@ -221,7 +221,7 @@ extension Find where T: UIView {
     /// - Parameter exactMatch: False if you only looking for a part of the string (default: true)
     /// - Parameter visualize: Visualization types (display route to the element as a view structure)
     /// - Returns: [Element]? (nil if not found, generic method)
-    public func all<T>(elementsOfType type: T.Type, visualize: VisualizationType) -> [T]? {
+    public func all<T>(elementsOfType type: T.Type, visualize: VisualizationType = .none) -> [T]? {
         if visualize != .none {
             print("- \(Visualize.description(element, nil, visualize))")
         }
