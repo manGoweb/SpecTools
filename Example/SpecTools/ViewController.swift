@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     let label3 = UILabel()
     
     let button1 = UIButton()
+    let longPressButton = UIButton()
     
     
     // MARK: Test properties
@@ -86,6 +87,21 @@ class ViewController: UIViewController {
             make.right.equalTo(-20)
             make.height.equalTo(36)
         }
+        
+        longPressButton.setTitle("Long press button", for: .normal)
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longTap(_:)))
+        longPressButton.addGestureRecognizer(longPressGesture)
+        longPressButton.layer.borderColor = UIColor.lightGray.cgColor
+        longPressButton.layer.borderWidth = 1
+        longPressButton.layer.cornerRadius = 5
+        longPressButton.setTitleColor(.gray, for: .normal)
+        scrollView.addSubview(longPressButton)
+        longPressButton.snp.makeConstraints { (make) in
+            make.top.equalTo(button1.snp.bottom).offset(20)
+            make.left.equalTo(20)
+            make.right.equalTo(-20)
+            make.height.equalTo(36)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -114,4 +130,9 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(c, animated: true)
     }
     
+    var didLongTap: Bool  = false
+    
+    @objc func longTap(_ sender: UIGestureRecognizer) {
+        didLongTap = true
+    }
 }

@@ -22,6 +22,7 @@ class ViewControllerSpec: QuickSpec {
         var subject: ViewController!
         
         var button1: UIButton!
+        var longPressButton: UIButton!
         
         describe("ViewController") {
             beforeEach {
@@ -38,6 +39,9 @@ class ViewControllerSpec: QuickSpec {
                 
                 // Get a button that equals "Launch table view controller" and print how we get to it in the console including all frames and any text if present
                 button1 = subject.view.spec.find.first(buttonWithText: "Launch table view controller", visualize: .all)!
+                
+                // Get a button that equals "Long press button"
+                longPressButton = subject.view.spec.find.first(buttonWithText: "Long press button")!
             }
             
             it("should have gone through the whole initial lifecycle procedure") {
@@ -102,6 +106,18 @@ class ViewControllerSpec: QuickSpec {
                 it("should have pushed TableViewController") {
                     // Check we have TableViewController in the navigation stack
                     expect(subject.navigationController?.spec.check.contains(viewControllerClass: TableViewController.self)).to(beTrue())
+                }
+            }
+            
+            describe("when we long press on long press button") {
+                beforeEach {
+                    // Simulate long press on button
+                    longPressButton.spec.action.triggerLongPress()
+                }
+                
+                it("should have pushed a new view controller") {
+                    // Check longTap function was called
+                    expect(subject.didLongTap).toEventually(beTrue())
                 }
             }
         }

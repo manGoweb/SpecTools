@@ -183,12 +183,22 @@ collectionView.spec.action.tap(item: 3)
 // or
 collectionView.spec.action.tap(item: 2, section: 1)
 ```
-
+------
 #### Simulating swipes
 
 Simulate swipe on a view with UISwipeGestureRecognizer(s)
 ```Swift
 view.spec.action.triggerSwipe(direction: .up)
+```
+
+------
+#### Simulating long presses
+
+Simulate swipe on a view with UILongPressGestureRecognizer(s)
+```Swift
+button.spec.action.triggerLongPress()
+// or
+button.spec.action.triggerLongPress(minimumPressDuration: 1.0, taps: 3, touches: 2)
 ```
 ------
 
