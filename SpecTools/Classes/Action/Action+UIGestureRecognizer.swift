@@ -47,7 +47,25 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
 
             return self
         }
-
+        
+        /// Simulate long press on a gesture recognizer
+        /// - Parameter minimumPressDuration: Minimum period of time before gesture recognized
+        /// - Parameter taps: Number of taps
+        /// - Parameter touches: Number of touches
+        @discardableResult public func triggerLongPress(minimumPressDuration: TimeInterval = 0.5, taps: Int = 1, touches: Int = 1) -> Action {
+            guard element.isUserInteractionEnabled else {
+                fatalError("User interactions are disabled. Gesture recognizer can't be used.")
+            }
+            let recognizers = element.spec.find.all(gestureRecognizersOfType: UILongPressGestureRecognizer.self)
+            for recognizer in recognizers {
+                if recognizer.minimumPressDuration <= minimumPressDuration &&
+                    recognizer.numberOfTapsRequired == taps &&
+                    recognizer.numberOfTouchesRequired == touches {
+                    recognizer.spec.action.execute()
+                }
+            }
+            return self
+        }
     }
 
 
