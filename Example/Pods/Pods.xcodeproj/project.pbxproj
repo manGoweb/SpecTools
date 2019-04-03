@@ -19,6 +19,8 @@
 		075595A60A4A05FB89AFB615F54BE7F2 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122E656CFDBD7490CA121BC402D505A /* ConstraintOffsetTarget.swift */; };
 		07D8D745FAC01139F3EAD3AECC48A6B6 /* SpecTools-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C67A998115381A5ED8EAB3F64D772 /* SpecTools-tvOS-dummy.m */; };
 		07DE22A5F96ADD7BFEC5396C594B41A0 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8062F5D94AB2449E9CFAA8B8C9FBDA37 /* ConstraintItem.swift */; };
+		08A536842254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A536832254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift */; };
+		08A536852254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A536832254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift */; };
 		0906BF5E8D197741C3DC4F808CF9ECB8 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD1ACD190152DB53E5E68751B20629 /* Expression.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		0AF0F5CD1066B0AA65639DCCA0C4C5C5 /* SpecTools-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F091B4CB83A0F384388E4D773CAA3F4 /* SpecTools-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B018C079C14A7F7480C3B5D6ECB8EC9 /* Checks+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73567A5BE12E0266A55EDCCADE173E45 /* Checks+UITableView.swift */; };
@@ -422,6 +424,7 @@
 		04A77ABA51BFCFCF0DEE1CA8A19F1800 /* Pods-SpecToolsExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpecToolsExampleTests.modulemap"; sourceTree = "<group>"; };
 		0610C2D9709898979C3E959E86A506D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../SnapKit-tvOS/Info.plist"; sourceTree = "<group>"; };
 		07CC6C4633CFC57DAF65260BB190687D /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		08A536832254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Action+UIBarButtonItem.swift"; sourceTree = "<group>"; };
 		0B37EED2ACB73214EC50D592130EB747 /* Pods-TVExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TVExampleTests-resources.sh"; sourceTree = "<group>"; };
 		0CBCE52C6368969A6AA28776AF77BE36 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble.framework; path = "Nimble-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DED4AA692CDE08D64A92DFE4518CE23 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
@@ -1163,6 +1166,7 @@
 				CE991C32A1F76DD874AF8EF42FE34B0F /* Action+UICollectionView.swift */,
 				0E61EB80CAF02B434397142FEEE870BC /* Action+UIGestureRecognizer.swift */,
 				DA9552062DC00AD9FA7080F24EDDF252 /* Action+UITableView.swift */,
+				08A536832254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift */,
 			);
 			name = Action;
 			path = SpecTools/Classes/Action;
@@ -1834,6 +1838,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A536842254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift in Sources */,
 				DE24046FFFBB0A990874F8F988B27AD5 /* Action+Button.swift in Sources */,
 				75C7AA74888B3BDA392DD01C502682DC /* Action+ScrollView.swift in Sources */,
 				CC7B85401F1E66FBE49E3770339AFC93 /* Action+UICollectionView.swift in Sources */,
@@ -2048,6 +2053,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A536852254FEEA00B3B6C9 /* Action+UIBarButtonItem.swift in Sources */,
 				9BEC0F16B70B3F8CC94FAEB10443D65C /* Action+Button.swift in Sources */,
 				229827102966A14AF16F3D213DB2EB0F /* Action+ScrollView.swift in Sources */,
 				613859A45A4134841EAEADF73460E13F /* Action+UICollectionView.swift in Sources */,
