@@ -23,6 +23,7 @@ class ViewControllerSpec: QuickSpec {
         
         var button1: UIButton!
         var longPressButton: UIButton!
+        var barButtonItem: UIBarButtonItem!
         
         describe("ViewController") {
             beforeEach {
@@ -42,6 +43,8 @@ class ViewControllerSpec: QuickSpec {
                 
                 // Get a button that equals "Long press button"
                 longPressButton = subject.view.spec.find.first(buttonWithText: "Long press button")!
+                
+                barButtonItem = subject.barButtonItem
             }
             
             it("should have gone through the whole initial lifecycle procedure") {
@@ -118,6 +121,18 @@ class ViewControllerSpec: QuickSpec {
                 it("should have pushed a new view controller") {
                     // Check longTap function was called
                     expect(subject.didLongTap).toEventually(beTrue())
+                }
+            }
+            
+            describe("when we tap on barButtonItem") {
+                beforeEach {
+                    // Simulate long press on button
+                    barButtonItem.spec.action.tap()
+                }
+                
+                it("should be able to trigget tap bar button item") {
+                    // Check didTabBarButtonItem function was called
+                    expect(subject.didTapBarButtonItem).to(beTrue())
                 }
             }
         }

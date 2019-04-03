@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     let button1 = UIButton()
     let longPressButton = UIButton()
     
+    let barButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: nil, action: nil)
+    
     
     // MARK: Test properties
     var didLoadView: Bool = false
@@ -102,6 +104,10 @@ class ViewController: UIViewController {
             make.right.equalTo(-20)
             make.height.equalTo(36)
         }
+        
+        self.navigationItem.rightBarButtonItem = self.barButtonItem
+        self.barButtonItem.target = self
+        self.barButtonItem.action = #selector(didTapBarButtonItem(_:))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -134,5 +140,11 @@ class ViewController: UIViewController {
     
     @objc func longTap(_ sender: UIGestureRecognizer) {
         didLongTap = true
+    }
+    
+    var didTapBarButtonItem: Bool = false
+
+    @objc func didTapBarButtonItem(_ sender: UIBarButtonItem) {
+        didTapBarButtonItem = true
     }
 }
