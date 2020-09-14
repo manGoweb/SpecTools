@@ -1,11 +1,3 @@
-//
-//  Find+UICollectionView.swift
-//  SpecTools
-//
-//  Created by Ondrej Rafaj on 15/09/2017.
-//
-
-import Foundation
 import UIKit
 
 

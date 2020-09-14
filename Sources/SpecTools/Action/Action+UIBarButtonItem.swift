@@ -1,11 +1,3 @@
-//
-//  Action+UIBarButtonItem.swift
-//  Nimble-iOS
-//
-//  Created by Yohta Watanave on 2019/04/03.
-//
-
-import Foundation
 import UIKit
 
 extension Action where T: UIBarButtonItem {

@@ -123,23 +123,13 @@ Online documentation should always reflect the latest code available on `master`
 
 This library can be run completely independently. It does not need quick and nimble although we highly recommend your give these libraries a go!
 
-#### Cocoapods
+#### Swift Package Manager
 
-SpecTools is available through [CocoaPods](http://cocoapods.org). To install
+SpecTools is available through an SPM (Swift Package Manager). To install
 it, simply add the following line to your test target in a Podfile:
 
-```ruby
-target 'SpecToolsExampleTests' do
-	pod "SpecTools"
-end
-```
-
-#### Carthage
-
-SpecTools is also available through [Carthage](https://github.com/Carthage/Carthage). To install
-it, simply add the following line to your Cartfile and than import the framework into your test target.
-```ruby
-github "manGoweb/SpecTools"
+```swift
+.package(url: "https://github.com/manGoweb/SpecTools.git", from: "2.0.0"),
 ```
 
 ## Usage

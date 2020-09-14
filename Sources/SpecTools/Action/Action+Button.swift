@@ -1,12 +1,3 @@
-//
-//  Action+Button.swift
-//  Pods
-//
-//  Created by Ondrej Rafaj on 27/08/2017.
-//
-//
-
-import Foundation
 import UIKit
 
 

@@ -1,12 +1,3 @@
-//
-//  Prepare+UIViewController.swift
-//  Pods
-//
-//  Created by Ondrej Rafaj on 25/08/2017.
-//
-//
-
-import Foundation
 import UIKit
 
 /// Apple devices, this enum only contais first in a line/screensize for each device (iPhone 6 is a predecesor of iPhone 7 thus only 6 is shown)

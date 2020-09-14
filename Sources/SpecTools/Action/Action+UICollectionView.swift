@@ -1,11 +1,3 @@
-//
-//  Action+UICollectionView.swift
-//  SpecTools
-//
-//  Created by Jonathan Aguele on 02/11/2017.
-//
-
-import Foundation
 import UIKit
 
 

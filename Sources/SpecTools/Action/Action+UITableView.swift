@@ -1,11 +1,3 @@
-//
-//  Action+UITableView.swift
-//  SpecTools
-//
-//  Created by DevPair9 on 02/11/2017.
-//
-
-import Foundation
 import UIKit
 
 

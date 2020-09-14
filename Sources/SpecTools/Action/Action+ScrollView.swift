@@ -1,11 +1,3 @@
-//
-//  Action+ScrollView.swift
-//  SpecTools
-//
-//  Created by DevPair9 on 06/11/2017.
-//
-
-import Foundation
 import UIKit
 
 
