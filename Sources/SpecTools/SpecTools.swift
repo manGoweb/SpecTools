@@ -1,4 +1,4 @@
-import UIKit
+import SwiftUI
 
 
 /// Checking properties of an object or a view
