@@ -4,9 +4,9 @@ import SwiftUI
 /// Checking properties of an object or a view
 public struct Check<T> {
     
-    let element: T
+    public let element: T
     
-    init(_ obj: T) {
+    public init(_ obj: T) {
         element = obj
     }
     
@@ -15,9 +15,9 @@ public struct Check<T> {
 /// Searching for views by their text or type
 public struct Find<T> {
     
-    let element: T
+    public let element: T
     
-    init(_ obj: T) {
+    public init(_ obj: T) {
         element = obj
     }
     
@@ -26,9 +26,9 @@ public struct Find<T> {
 /// Prepare objects or views for certain state
 public struct Prepare<T> {
     
-    let element: T
+    public let element: T
     
-    init(_ obj: T) {
+    public init(_ obj: T) {
         element = obj
     }
     
@@ -37,9 +37,9 @@ public struct Prepare<T> {
 /// Simulate actions on views or objects
 public struct Action<T> {
     
-    let element: T
+    public let element: T
     
-    init(_ obj: T) {
+    public init(_ obj: T) {
         element = obj
     }
     

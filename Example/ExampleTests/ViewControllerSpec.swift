@@ -3,7 +3,7 @@ import Quick
 import Nimble
 import SpecTools
 
-@testable import SpecToolsExample
+@testable import Example
 
 
 class ViewControllerSpec: QuickSpec {

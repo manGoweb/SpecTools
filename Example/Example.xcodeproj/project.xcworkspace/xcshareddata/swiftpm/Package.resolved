@@ -27,6 +27,15 @@
           "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
           "version": "5.0.1"
         }
+      },
+      {
+        "package": "SpecTools",
+        "repositoryURL": "https://github.com/manGoweb/SpecTools",
+        "state": {
+          "branch": "swiftui",
+          "revision": "a645b500e239f64d5714e32c35d9168ba8ae6f4e",
+          "version": null
+        }
       }
     ]
   },

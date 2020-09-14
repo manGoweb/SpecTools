@@ -18,7 +18,7 @@
 		159F944A250FBB40009A6637 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9444250FBB40009A6637 /* TableViewController.swift */; };
 		159F944B250FBB40009A6637 /* LabeledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9445250FBB40009A6637 /* LabeledView.swift */; };
 		159F944C250FBB40009A6637 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9446250FBB40009A6637 /* TableViewCell.swift */; };
-		159F9452250FBBE1009A6637 /* CollectionViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F944D250FBBE0009A6637 /* CollectionViewControllerSpecs.swift */; };
+		159F9452250FBBE1009A6637 /* CollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F944D250FBBE0009A6637 /* CollectionViewControllerSpec.swift */; };
 		159F9453250FBBE1009A6637 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F944E250FBBE0009A6637 /* ViewControllerSpec.swift */; };
 		159F9454250FBBE1009A6637 /* BasicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F944F250FBBE0009A6637 /* BasicSpec.swift */; };
 		159F9455250FBBE1009A6637 /* SwipeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9450250FBBE0009A6637 /* SwipeViewControllerSpec.swift */; };
@@ -26,6 +26,9 @@
 		159F9459250FBC1A009A6637 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 159F9458250FBC1A009A6637 /* SnapKit */; };
 		159F945C250FBDB1009A6637 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 159F945B250FBDB1009A6637 /* Quick */; };
 		159F945F250FBDC9009A6637 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 159F945E250FBDC9009A6637 /* Nimble */; };
+		159F9464250FBFAF009A6637 /* SpecTools in Frameworks */ = {isa = PBXBuildFile; productRef = 159F9463250FBFAF009A6637 /* SpecTools */; };
+		159F9466250FBFD9009A6637 /* SwiftUIViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9465250FBFD9009A6637 /* SwiftUIViewSpec.swift */; };
+		159F9469250FC07C009A6637 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159F9468250FC07C009A6637 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +57,13 @@
 		159F9444250FBB40009A6637 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		159F9445250FBB40009A6637 /* LabeledView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabeledView.swift; sourceTree = "<group>"; };
 		159F9446250FBB40009A6637 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		159F944D250FBBE0009A6637 /* CollectionViewControllerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerSpecs.swift; sourceTree = "<group>"; };
+		159F944D250FBBE0009A6637 /* CollectionViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		159F944E250FBBE0009A6637 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		159F944F250FBBE0009A6637 /* BasicSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSpec.swift; sourceTree = "<group>"; };
 		159F9450250FBBE0009A6637 /* SwipeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewControllerSpec.swift; sourceTree = "<group>"; };
 		159F9451250FBBE1009A6637 /* TableViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerSpec.swift; sourceTree = "<group>"; };
+		159F9465250FBFD9009A6637 /* SwiftUIViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewSpec.swift; sourceTree = "<group>"; };
+		159F9468250FC07C009A6637 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 			files = (
 				159F945C250FBDB1009A6637 /* Quick in Frameworks */,
 				159F945F250FBDC9009A6637 /* Nimble in Frameworks */,
+				159F9464250FBFAF009A6637 /* SpecTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +109,7 @@
 		159F941E250FBA52009A6637 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				159F9467250FC066009A6637 /* SwiftUI */,
 				159F9442250FBB40009A6637 /* CollectionViewController.swift */,
 				159F9445250FBB40009A6637 /* LabeledView.swift */,
 				159F9441250FBB3F009A6637 /* SwipeView.swift */,
@@ -123,13 +130,22 @@
 			isa = PBXGroup;
 			children = (
 				159F944F250FBBE0009A6637 /* BasicSpec.swift */,
-				159F944D250FBBE0009A6637 /* CollectionViewControllerSpecs.swift */,
+				159F944D250FBBE0009A6637 /* CollectionViewControllerSpec.swift */,
 				159F9450250FBBE0009A6637 /* SwipeViewControllerSpec.swift */,
 				159F9451250FBBE1009A6637 /* TableViewControllerSpec.swift */,
 				159F944E250FBBE0009A6637 /* ViewControllerSpec.swift */,
+				159F9465250FBFD9009A6637 /* SwiftUIViewSpec.swift */,
 				159F9438250FBA53009A6637 /* Info.plist */,
 			);
 			path = ExampleTests;
+			sourceTree = "<group>";
+		};
+		159F9467250FC066009A6637 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				159F9468250FC07C009A6637 /* SwiftUIView.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +188,7 @@
 			packageProductDependencies = (
 				159F945B250FBDB1009A6637 /* Quick */,
 				159F945E250FBDC9009A6637 /* Nimble */,
+				159F9463250FBFAF009A6637 /* SpecTools */,
 			);
 			productName = ExampleTests;
 			productReference = 159F9432250FBA53009A6637 /* ExampleTests.xctest */;
@@ -210,6 +227,7 @@
 				159F9457250FBC1A009A6637 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				159F945A250FBDB1009A6637 /* XCRemoteSwiftPackageReference "Quick" */,
 				159F945D250FBDC9009A6637 /* XCRemoteSwiftPackageReference "Nimble" */,
+				159F9462250FBFAF009A6637 /* XCRemoteSwiftPackageReference "SpecTools" */,
 			);
 			productRefGroup = 159F941D250FBA52009A6637 /* Products */;
 			projectDirPath = "";
@@ -248,6 +266,7 @@
 			files = (
 				159F9449250FBB40009A6637 /* SwipeViewController.swift in Sources */,
 				159F944C250FBB40009A6637 /* TableViewCell.swift in Sources */,
+				159F9469250FC07C009A6637 /* SwiftUIView.swift in Sources */,
 				159F944A250FBB40009A6637 /* TableViewController.swift in Sources */,
 				159F944B250FBB40009A6637 /* LabeledView.swift in Sources */,
 				159F9448250FBB40009A6637 /* CollectionViewController.swift in Sources */,
@@ -261,8 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159F9466250FBFD9009A6637 /* SwiftUIViewSpec.swift in Sources */,
 				159F9454250FBBE1009A6637 /* BasicSpec.swift in Sources */,
-				159F9452250FBBE1009A6637 /* CollectionViewControllerSpecs.swift in Sources */,
+				159F9452250FBBE1009A6637 /* CollectionViewControllerSpec.swift in Sources */,
 				159F9456250FBBE1009A6637 /* TableViewControllerSpec.swift in Sources */,
 				159F9455250FBBE1009A6637 /* SwipeViewControllerSpec.swift in Sources */,
 				159F9453250FBBE1009A6637 /* ViewControllerSpec.swift in Sources */,
@@ -553,6 +573,14 @@
 				minimumVersion = 8.1.2;
 			};
 		};
+		159F9462250FBFAF009A6637 /* XCRemoteSwiftPackageReference "SpecTools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/manGoweb/SpecTools";
+			requirement = {
+				branch = swiftui;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -570,6 +598,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 159F945D250FBDC9009A6637 /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
+		};
+		159F9463250FBFAF009A6637 /* SpecTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 159F9462250FBFAF009A6637 /* XCRemoteSwiftPackageReference "SpecTools" */;
+			productName = SpecTools;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
