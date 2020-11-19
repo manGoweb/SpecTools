@@ -28,7 +28,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
             let recognizers = element.spec.find.all(gestureRecognizersOfType: UITapGestureRecognizer.self)
             for recognizer in recognizers {
                 if recognizer.numberOfTapsRequired == taps && recognizer.numberOfTouchesRequired == touches {
-                    recognizer.spec.action.execute()
+                    recognizer.spec.action.execute(recognizer)
                 }
             }
             return self
@@ -42,7 +42,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
             }
             let recognizers = element.spec.find.all(gestureRecognizersOfType: UISwipeGestureRecognizer.self)
             for recognizer in recognizers where recognizer.direction == direction {
-                recognizer.spec.action.execute()
+                recognizer.spec.action.execute(recognizer)
             }
 
             return self
@@ -61,7 +61,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
                 if recognizer.minimumPressDuration <= minimumPressDuration &&
                     recognizer.numberOfTapsRequired == taps &&
                     recognizer.numberOfTouchesRequired == touches {
-                    recognizer.spec.action.execute()
+                    recognizer.spec.action.execute(recognizer)
                 }
             }
             return self
@@ -98,14 +98,13 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
         }
 
         /// Executes all targets on a specific gesture recognizer
-        @discardableResult public func execute() -> Action {
+        @discardableResult public func execute(_ recognizer: UIGestureRecognizer? = nil) -> Action {
             let targetsInfo = element.spec.action.getTargetInfo()
             for info in targetsInfo {
-                info.target.performSelector(onMainThread: info.action, with: nil, waitUntilDone: true)
+                info.target.performSelector(onMainThread: info.action, with: recognizer, waitUntilDone: true)
             }
             return self
         }
-
-    }
+     }
 
 #endif
