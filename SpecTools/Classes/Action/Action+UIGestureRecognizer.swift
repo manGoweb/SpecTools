@@ -98,7 +98,7 @@ public typealias TargetActionInfo = [(target: AnyObject, action: Selector)]
         }
 
         /// Executes all targets on a specific gesture recognizer
-        @discardableResult public func execute(_ recognizer: UIGestureRecognizer) -> Action {
+        @discardableResult public func execute(_ recognizer: UIGestureRecognizer? = nil) -> Action {
             let targetsInfo = element.spec.action.getTargetInfo()
             for info in targetsInfo {
                 info.target.performSelector(onMainThread: info.action, with: recognizer, waitUntilDone: true)
